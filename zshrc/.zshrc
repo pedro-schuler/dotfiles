@@ -76,6 +76,7 @@ alias ld.="eza -lDhX --color-scale=all --icons=always"
 alias lf="eza -lfhX -I='.*' --color-scale=all --icons=always"
 alias lf.="eza -lfhX --color-scale=all --icons=always"
 alias lh="eza -ldhX .* --color-scale=all --icons=always"
+alias cd="z"
 
 # Shell integrations
 eval "$(fzf --zsh)"
