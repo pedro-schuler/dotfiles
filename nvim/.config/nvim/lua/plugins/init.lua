@@ -5,6 +5,9 @@ return {
             "tex",
             "bib",
         },
+        config = function()
+            require "configs.vimtex"
+        end,
     },
 
     {
