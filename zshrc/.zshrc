@@ -67,14 +67,16 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias vim='nvim'
+alias top='btop'
+alias cat='bat'
 alias c='clear'
 alias emc="emacsclient -c -a 'emacs'"
 alias ls="ls -lah --color --group-directories-first"
 alias la="eza -lah --color-scale=all --group-directories-first --icons=always"
-alias ld="eza -lDh -I='.*' --color-scale=all --icons=always"
-alias ld.="eza -lDh --color-scale=all --icons=always"
-alias lf="eza -lfh -I='.*' --color-scale=all --icons=always"
-alias lf.="eza -lfh --color-scale=all --icons=always"
+alias ld="eza -lDh --color-scale=all --icons=always"
+alias ld.="eza -lDah --color-scale=all --icons=always"
+alias lf="eza -lfh --color-scale=all --icons=always"
+alias lf.="eza -lfah --color-scale=all --icons=always"
 alias lh="eza -ldh .* --color-scale=all --icons=always"
 
 # Shell integrations
