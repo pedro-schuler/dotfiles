@@ -35,8 +35,8 @@
 ;;(setq doom-theme 'doom-one)
 ;;(setq doom-theme 'doom-gruvbox)
 ;;(setq doom-theme 'doom-dracula)
-(setq catppuccin-flavor 'mocha) ;; or 'latte, 'macchiato, frappe' or 'mocha
-(setq doom-theme 'catppuccin)
+;;(setq catppuccin-flavor 'mocha) ;; or 'latte, 'macchiato, frappe' or 'mocha
+(setq doom-theme 'doom-tokyo-night)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
