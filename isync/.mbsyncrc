@@ -12,7 +12,7 @@ IMAPAccount faculdade
 Host imap.gmail.com
 Port 993
 User pedro.schuler@ufpe.br 
-PassCmd "pass show email-ufpe"
+PassCmd "pass show UFPE/email-ufpe"
 TLSType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt 
 
@@ -36,7 +36,7 @@ IMAPAccount pessoal
 Host imap.gmail.com
 Port 993
 User schuler.p.m@gmail.com 
-PassCmd "pass show email-pessoal"
+PassCmd "pass show Google/email-pessoal"
 TLSType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt 
 
@@ -60,7 +60,7 @@ IMAPAccount trabalho
 Host imap.fab.mil.br
 Port 993
 User pedropmsc@fab.mil.br 
-PassCmd "pass show email-trabalho"
+PassCmd "pass show FAB/email-trabalho"
 TLSType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt 
 
