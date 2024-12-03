@@ -1,0 +1,32 @@
+defaults
+auth on
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile ~/.config/msmtp/msmtp.log
+ 
+account email-ufpe 
+host smtp.gmail.com
+port 465
+tls_starttls off
+from pedro.schuler@ufpe.br
+user pedro.schuler@ufpe.br
+passwordeval "pass show email-ufpe"
+ 
+account email-pessoal
+host smtp.gmail.com
+port 465
+tls_starttls off
+from schuler.p.m@gmail.com 
+user schuler.p.m@gmail.com
+passwordeval "pass show email-pessoal"
+
+account email-trabalho
+host smtp.fab.mil.br
+port 465
+tls_starttls off
+from pedropmsc@fab.mil.br
+user pedropmsc@fab.mil.br
+passwordeval "pass show email-trabalho"
+
+account default : email-pessoal

@@ -1,0 +1,31 @@
+# User
+set from = "pedro.schuler@ufpe.br"
+set realname = "Pedro Schuler"
+
+# Gmail
+#set imap_user = "pedro.schuler@ufpe.br"
+#set smtp_url = "smtps://pedro.schuler@ufpe.br@smtp.gmail.com:465/"
+#set smtp_authenticators = 'gssapi:login'
+#source "gpg -dq ~/.config/mutt/ufpe.gpg |"
+
+# My mailboxes
+#set folder= "imaps://pedro.schuler@ufpe.br@imap.gmail.com:993/"
+#set spoolfile = "+INBOX"
+#set postponed = "+[Gmail]/Rascunhos"
+#set record = "+[Gmail]/E-mails enviados"
+#set trash = "+[Gmail]/Lixeira"
+#set imap_check_subscribed
+#mailboxes =inbox =starred =snoozed =sent =drafts =imp =scheduled =spam =trash
+
+set mbox_type = Maildir
+set folder = "~/.mail/ufpe"
+set spoolfile = "+Inbox"
+set postponed = "+[Gmail].Rascunhos"
+set record = "+[Gmail].E-mails enviados"
+set trash = "+[Gmail].Lixeira"
+mailboxes =Inbox ="[Gmail].Todos os e-mails" ="[Gmail].Spam" ="[Gmail].Rascunhos" ="[Gmail].Lixeira" ="[Gmail].Importante" ="[Gmail].E-mails enviados" ="[Gmail].Com estrela"
+
+set sendmail = "msmtp -a pedro.schuler@ufpe.br"
+
+source ~/.config/mutt/general.config
+source ~/.config/mutt/colors.config

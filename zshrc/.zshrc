@@ -78,6 +78,9 @@ alias ld.="eza -lDah --color-scale=all --icons=always"
 alias lf="eza -lfh --color-scale=all --icons=always"
 alias lf.="eza -lfah --color-scale=all --icons=always"
 alias lh="eza -ldh .* --color-scale=all --icons=always"
+alias mutt-pessoal="neomutt -F ~/.config/mutt/muttrc-pessoal"
+alias mutt-trabalho="neomutt -F ~/.config/mutt/muttrc-trabalho"
+alias mutt-faculdade="neomutt -F ~/.config/mutt/muttrc-faculdade"
 
 # Shell integrations
 eval "$(fzf --zsh)"

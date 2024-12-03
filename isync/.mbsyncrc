@@ -1,0 +1,79 @@
+# Automatically create missing mailboxes, both locally and on the server
+Create Both
+# Sync the movement of messages between folders and deletions, add after making sure the sync works
+Expunge Both
+# Save the synchronization state files in the relevant directory
+SyncState *
+MaxMessages 0
+
+##########################################
+
+IMAPAccount faculdade 
+Host imap.gmail.com
+Port 993
+User pedro.schuler@ufpe.br 
+PassCmd "pass show email-ufpe"
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt 
+
+IMAPStore faculdade-remote
+Account faculdade
+
+MaildirStore faculdade-local
+Subfolders Verbatim
+Path ~/.mail/ufpe/
+INBOX ~/.mail/ufpe/Inbox
+Flatten .
+
+Channel faculdade
+Far :faculdade-remote:
+Near :faculdade-local:
+Patterns *
+
+#########################################
+
+IMAPAccount pessoal 
+Host imap.gmail.com
+Port 993
+User schuler.p.m@gmail.com 
+PassCmd "pass show email-pessoal"
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt 
+
+IMAPStore pessoal-remote
+Account pessoal
+
+MaildirStore pessoal-local
+Subfolders Verbatim
+Path ~/.mail/pessoal/
+INBOX ~/.mail/pessoal/Inbox
+Flatten .
+
+Channel pessoal
+Far :pessoal-remote:
+Near :pessoal-local:
+Patterns *
+
+#########################################
+
+IMAPAccount trabalho 
+Host imap.fab.mil.br
+Port 993
+User pedropmsc@fab.mil.br 
+PassCmd "pass show email-trabalho"
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt 
+
+IMAPStore trabalho-remote
+Account trabalho
+
+MaildirStore trabalho-local
+Subfolders Verbatim
+Path ~/.mail/trabalho/
+INBOX ~/.mail/trabalho/Inbox
+Flatten .
+
+Channel trabalho 
+Far :trabalho-remote:
+Near :trabalho-local:
+Patterns *

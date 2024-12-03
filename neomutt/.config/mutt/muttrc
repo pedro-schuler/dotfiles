@@ -1,4 +1,1 @@
-set imap_user=schuler.p.m@gmail.com
-set folder=imaps://schuler.p.m@imap.gmail.com/
-set spoolfile=+INBOX
-mailboxes =INBOX
+muttrc-pessoal
