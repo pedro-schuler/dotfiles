@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Mutt Faculdade
+GenericName=Terminal email viewer
+Comment=Check e-mail
+Comment[pt_BR]=Veja seus email no terminal
+TryExec=kitty -e neomutt -F ~/.config/mutt/muttrc-faculdade
+Exec=kitty --title=Neomutt-Faculdade -e neomutt -F ~/.config/mutt/muttrc-faculdade
+Terminal=false
+Type=Application
+Keywords=Email;ncurses;
+StartupNotify=false

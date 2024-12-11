@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Mutt Pessoal
+GenericName=Terminal email viewer
+Comment=Check e-mail
+Comment[pt_BR]=Veja seus email no terminal
+TryExec=kitty -e neomutt -F ~/.config/mutt/muttrc-pessoal
+Exec=kitty --title=Neomutt-Pessoal -e neomutt -F ~/.config/mutt/muttrc-pessoal
+Terminal=false
+Type=Application
+Keywords=Email;ncurses;
+StartupNotify=false

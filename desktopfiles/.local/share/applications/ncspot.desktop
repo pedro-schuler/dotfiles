@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Ncspot
+GenericName=Terminal Music Player
+Comment=Listen to music
+Comment[pt_BR]=Escute musica no terminal
+TryExec=kitty -e ncspot
+Exec=kitty --title=ncspot ncspot
+Terminal=false
+Type=Application
+Keywords=Music;Player;
+StartupNotify=false
