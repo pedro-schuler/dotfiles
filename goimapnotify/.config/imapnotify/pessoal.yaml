@@ -1,0 +1,18 @@
+configurations:
+  -
+    host: gmail.com 
+    port: 993
+    tls: true
+    tlsOptions:
+      rejectUnauthorized: false
+      starttls: false 
+    username: schuler.p.m@gmail.com 
+    alias: GooglePessoal
+    xoAuth2: false
+    boxes:
+      mailbox: INBOX
+      onNewMail: 'mbsync -nL pessoal:INBOX'
+      onNewMailPost: 'notmuch new'
+    passwordCMD: 'pass show Google/email-pessoal'
+    onNewMail: 'mbsync -nL pessoal:INBOX'
+    onNewMailPost: 'notmuch new'

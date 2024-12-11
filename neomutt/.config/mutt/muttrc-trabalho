@@ -29,3 +29,6 @@ set sendmail = "msmtp -a email-trabalho"
 
 source ~/.config/mutt/general.config
 source ~/.config/mutt/colors.config
+
+macro index S "<shell-escape>mbsync -nL trabalho:INBOX<enter><shell-escape>notmuch new<enter>" "Pull new mail from inbox"
+macro index \CA "<shell-escape>mbsync -V trabalho<enter><shell-escape>notmuch new<enter>" "Sync all mailboxes"

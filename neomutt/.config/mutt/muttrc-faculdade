@@ -29,3 +29,6 @@ set sendmail = "msmtp -a pedro.schuler@ufpe.br"
 
 source ~/.config/mutt/general.config
 source ~/.config/mutt/colors.config
+
+macro index S "<shell-escape>mbsync -nL faculdade:INBOX<enter><shell-escape>notmuch new<enter>" "Pull new mail from inbox"
+macro index \CA "<shell-escape>mbsync -V faculdade<enter><shell-escape>notmuch new<enter>" "sync all mailboxes"
