@@ -1,16 +1,16 @@
 configurations:
   -
-    host: imap.gmail.com 
+    host: imap.fab.mil.br
     port: 993
     tls: true
     tlsOptions:
       rejectUnauthorized: false
       starttls: false 
-    username: schuler.p.m@gmail.com 
-    alias: GooglePessoal
+    username: pedropmsc@fab.mil.br 
+    alias: TrabalhoFAB
     xoAuth2: false
     boxes:
       mailbox: INBOX
-      onNewMail: 'mbsync -nL pessoal:INBOX'
+      onNewMail: 'mbsync -nL trabalho:INBOX'
       onNewMailPost: 'notmuch new'
-    passwordCMD: 'pass show Google/email-pessoal'
+    passwordCMD: 'pass show FAB/email-trabalho'

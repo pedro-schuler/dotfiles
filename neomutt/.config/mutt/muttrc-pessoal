@@ -3,19 +3,14 @@ set from = "schuler.p.m@gmail.com"
 set realname = "Pedro Schuler"
 
 # Gmail
-#set imap_user = "pedro.schuler@ufpe.br"
-#set smtp_url = "smtps://pedro.schuler@ufpe.br@smtp.gmail.com:465/"
+#set imap_user = "schuler.p.m@gmail.com"
+#set smtp_url = "smtps://schuler.p.m@gmail.com@smtp.gmail.com:465/"
 #set smtp_authenticators = 'gssapi:login'
-#source "gpg -dq ~/.config/mutt/ufpe.gpg |"
+#source "pass show Google/email-pessoal"
 
 # My mailboxes
-#set folder= "imaps://pedro.schuler@ufpe.br@imap.gmail.com:993/"
-#set spoolfile = "+INBOX"
-#set postponed = "+[Gmail]/Rascunhos"
-#set record = "+[Gmail]/E-mails enviados"
-#set trash = "+[Gmail]/Lixeira"
+#set folder= "imaps://schuler.p.m@gmail.com@imap.gmail.com:993/"
 #set imap_check_subscribed
-#mailboxes =inbox =starred =snoozed =sent =drafts =imp =scheduled =spam =trash
 
 set mbox_type = Maildir
 set folder = "~/.mail/pessoal"
@@ -23,7 +18,7 @@ set spoolfile = "+Inbox"
 set postponed = "+[Gmail].Rascunhos"
 set record = "+[Gmail].E-mails enviados"
 set trash = "+[Gmail].Lixeira"
-mailboxes =Inbox ="[Gmail].Todos os e-mails" ="[Gmail].Spam" ="[Gmail].Rascunhos" ="[Gmail].Lixeira" ="[Gmail].Importante" ="[Gmail].E-mails enviados" ="[Gmail].Com estrela" =Aluguel =Bicicletas ="Amigos" ="Amigos.Amanda" ="Amigos.Tainá" ="Apresentações" ="Arquivo Morto" ="Backups" ="BikePE" ="Boletim de Ocorrência" ="Cadastros" ="Cadastros.UPE2012" ="Compras e Recibos" ="Compras e Recibos.99pop" ="Compras e Recibos.99 taxis" ="Compras e Recibos.Bancos" ="Compras e Recibos.BlaBlaCar" ="Compras e Recibos.Casa Nova" ="Compras e Recibos.Contas" ="Compras e Recibos.Eventos" ="Compras e Recibos.iFood" ="Compras e Recibos.Petshop" ="Compras e Recibos.PicPay" ="Compras e Recibos.SAC - Reclamações" ="Compras e Recibos.Shows" ="Compras e Recibos.Uber" ="Concursos" ="Desenvolvimento" ="Desenvolvimento.Github" ="Desenvolvimento.Gitlab" ="Doações" ="Eleições" ="Facebook" ="Faculdade" ="Faculdade.Biblioteca" ="Família" ="Família.Animais de Estimação" ="Família.Emanuel" ="Família.Mirella" ="Família.Poliana" ="Fotos" ="Iasmine" ="Impostos" ="Íntimo e Careca" ="Modelos" ="MOOC" ="Nota Paulista" ="Órgãos Governamentais" ="Promoções" ="Quora" ="Saúde" ="Serviços Online" ="Site" ="Sport Recife" ="Tatuagens" ="Trabalho - DECEA" ="Trabalho - DECEA.ARPC" ="Trabalho - DECEA.ATM 005" ="Trabalho - DECEA.Backup" ="Trabalho - DECEA.DACTA 1303" ="Trabalho - DECEA.Desenvolvimento" ="Trabalho - DECEA.INEP" ="Trabalho - DECEA.Informativos" ="Trabalho - DECEA.LPNA" ="Trabalho - DECEA.PAD Jatobá" ="Trabalho - DECEA.SAUTI" ="Trabalho - DECEA.SIGAC" ="Trabalho - DECEA.TWR-RF" ="Trabalho - DECEA.Viagens" ="Udemy" ="Velharias" ="Viagens"
+mailboxes =Inbox ="[Gmail].Todos os e-mails" ="[Gmail].Spam" ="[Gmail].Rascunhos" ="[Gmail].Lixeira" ="[Gmail].Importante" ="[Gmail].E-mails enviados" ="[Gmail].Com estrela" =Aluguel =Bicicletas ="Amigos" ="Amigos.Amanda" ="Amigos.Tainá" ="Apresentações" ="Arquivo Morto" ="Backups" ="Bancos" ="BikePE" ="Boletim de Ocorrência" ="Cadastros" ="Cadastros.UPE2012" ="Compras e Recibos" ="Compras e Recibos.99pop" ="Compras e Recibos.99 taxis" ="Compras e Recibos.Bancos" ="Compras e Recibos.BlaBlaCar" ="Compras e Recibos.Casa Nova" ="Compras e Recibos.Contas" ="Compras e Recibos.Eventos" ="Compras e Recibos.iFood" ="Compras e Recibos.Petshop" ="Compras e Recibos.PicPay" ="Compras e Recibos.SAC - Reclamações" ="Compras e Recibos.Shows" ="Compras e Recibos.Uber" ="Concursos" ="Desenvolvimento" ="Desenvolvimento.Github" ="Desenvolvimento.Gitlab" ="Doações" ="Eleições" ="Facebook" ="Faculdade" ="Faculdade.Biblioteca" ="Família" ="Família.Animais de Estimação" ="Família.Emanuel" ="Família.Mirella" ="Família.Poliana" ="Fotos" ="Iasmine" ="Impostos" ="Íntimo e Careca" ="Modelos" ="MOOC" ="Nota Paulista" ="Órgãos Governamentais" ="Promoções" ="Quora" ="Saúde" ="Serviços Online" ="Site" ="Sport Recife" ="Tatuagens" ="Trabalho - DECEA" ="Trabalho - DECEA.ARPC" ="Trabalho - DECEA.ATM 005" ="Trabalho - DECEA.Backup" ="Trabalho - DECEA.DACTA 1303" ="Trabalho - DECEA.Desenvolvimento" ="Trabalho - DECEA.INEP" ="Trabalho - DECEA.Informativos" ="Trabalho - DECEA.LPNA" ="Trabalho - DECEA.PAD Jatobá" ="Trabalho - DECEA.SAUTI" ="Trabalho - DECEA.SIGAC" ="Trabalho - DECEA.TWR-RF" ="Trabalho - DECEA.Viagens" ="Udemy" ="Velharias" ="Viagens"
 
 set sendmail = "msmtp -a email-pessoal" 
 

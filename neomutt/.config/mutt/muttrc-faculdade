@@ -6,16 +6,11 @@ set realname = "Pedro Schuler"
 #set imap_user = "pedro.schuler@ufpe.br"
 #set smtp_url = "smtps://pedro.schuler@ufpe.br@smtp.gmail.com:465/"
 #set smtp_authenticators = 'gssapi:login'
-#source "gpg -dq ~/.config/mutt/ufpe.gpg |"
+#source "pass show UFPE/email-ufpe"
 
 # My mailboxes
 #set folder= "imaps://pedro.schuler@ufpe.br@imap.gmail.com:993/"
-#set spoolfile = "+INBOX"
-#set postponed = "+[Gmail]/Rascunhos"
-#set record = "+[Gmail]/E-mails enviados"
-#set trash = "+[Gmail]/Lixeira"
 #set imap_check_subscribed
-#mailboxes =inbox =starred =snoozed =sent =drafts =imp =scheduled =spam =trash
 
 set mbox_type = Maildir
 set folder = "~/.mail/ufpe"

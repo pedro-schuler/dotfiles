@@ -3,8 +3,8 @@ Name=Mutt Faculdade
 GenericName=Terminal email viewer
 Comment=Check e-mail
 Comment[pt_BR]=Veja seus email no terminal
-TryExec=kitty -e neomutt -F ~/.config/mutt/muttrc-faculdade
-Exec=kitty --title=Neomutt-Faculdade -e neomutt -F ~/.config/mutt/muttrc-faculdade
+TryExec=kitty sh -c "~/.config/mutt/scripts/emailfaculdade.sh"
+Exec=kitty --title=Neomutt-Faculdade sh -c "~/.config/mutt/scripts/emailfaculdade.sh"
 Terminal=false
 Type=Application
 Keywords=Email;ncurses;

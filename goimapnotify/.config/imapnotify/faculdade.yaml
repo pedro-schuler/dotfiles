@@ -6,11 +6,11 @@ configurations:
     tlsOptions:
       rejectUnauthorized: false
       starttls: false 
-    username: schuler.p.m@gmail.com 
-    alias: GooglePessoal
+    username: pedro.schuler@ufpe.br 
+    alias: FaculdadeUFPE
     xoAuth2: false
     boxes:
       mailbox: INBOX
-      onNewMail: 'mbsync -nL pessoal:INBOX'
+      onNewMail: 'mbsync -nL faculdade:INBOX'
       onNewMailPost: 'notmuch new'
-    passwordCMD: 'pass show Google/email-pessoal'
+    passwordCMD: 'pass show UFPE/email-ufpe'
