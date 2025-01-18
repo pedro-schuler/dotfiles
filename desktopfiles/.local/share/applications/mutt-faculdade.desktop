@@ -3,6 +3,7 @@ Name=Mutt Faculdade
 GenericName=Terminal email viewer
 Comment=Check e-mail
 Comment[pt_BR]=Veja seus email no terminal
+Icon=/usr/share/icons/Papirus-Dark/48x48/apps/mutt.svg
 TryExec=kitty sh -c "~/.config/mutt/scripts/emailfaculdade.sh"
 Exec=kitty --title=Neomutt-Faculdade sh -c "~/.config/mutt/scripts/emailfaculdade.sh"
 Terminal=false

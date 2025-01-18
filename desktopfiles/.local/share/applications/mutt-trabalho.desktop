@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Mutt Trabalho
 GenericName=Terminal email viewer
+Icon=/usr/share/icons/Papirus-Dark/48x48/apps/mutt.svg
 Comment=Check e-mail
 Comment[pt_BR]=Veja seus email no terminal
 TryExec=kitty sh -c "~/.config/mutt/scripts/emailtrabalho.sh"

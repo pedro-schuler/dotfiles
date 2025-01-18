@@ -3,6 +3,7 @@ Name=Mutt Pessoal
 GenericName=Terminal email viewer
 Comment=Check e-mail
 Comment[pt_BR]=Veja seus email no terminal
+Icon=/usr/share/icons/Papirus-Dark/48x48/apps/mutt.svg
 TryExec=kitty sh -c "~/.config/mutt/scripts/emailpessoal.sh"
 Exec=kitty --title=Neomutt-Pessoal sh -c "~/.config/mutt/scripts/emailpessoal.sh"
 Terminal=false

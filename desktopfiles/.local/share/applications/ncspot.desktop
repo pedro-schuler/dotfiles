@@ -3,6 +3,7 @@ Name=Ncspot
 GenericName=Terminal Music Player
 Comment=Listen to music
 Comment[pt_BR]=Escute musica no terminal
+Icon=/usr/share/icons/Papirus-Dark/48x48/apps/spotify-client.svg
 TryExec=kitty -e ncspot
 Exec=kitty --title=ncspot ncspot
 Terminal=false
