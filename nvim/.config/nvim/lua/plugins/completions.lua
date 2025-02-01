@@ -43,6 +43,7 @@ return {
 					{ name = "buffer" },
 					{ name = "path" },
 					{ name = "vimtex" },
+					{ name = "render-markdown" },
 				}),
 			})
 		end,
