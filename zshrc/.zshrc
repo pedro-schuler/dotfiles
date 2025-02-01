@@ -41,11 +41,7 @@ zinit cdreplay -q
 
 # Keybindings
 bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
-bindkey '^[w' kill-region
-
-# History
+bindkey '^p' history-search-backward bindkey '^n' history-search-forward bindkey '^[w' kill-region # History
 HISTSIZE=5000
 HISTFILE=~/.histfile
 SAVEHIST=$HISTSIZE
