@@ -5,6 +5,7 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
 export PATH="$HOME/.local/texlive/2024/bin/x86_64-linux:$HOME/.local/bin/:$HOME/.config/emacs/bin:$PATH"
+export EDITOR="nvim"
 
 #Iniciar oh my posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/config.toml)"

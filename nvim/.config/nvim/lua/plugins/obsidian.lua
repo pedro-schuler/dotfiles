@@ -10,7 +10,7 @@ return {
 		workspaces = {
 			{
 				name = "Obsidian",
-				path = "~/Sync/Obsidian-PocoX6/",
+				path = "~/Sync/Obsidian-PocoX6",
 			},
 		},
 		ui = { enable = false },
