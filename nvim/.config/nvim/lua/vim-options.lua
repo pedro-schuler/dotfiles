@@ -13,7 +13,7 @@ vim.cmd("set shiftwidth=2")
 
 -- Set clipboard for nvim
 vim.schedule(function()
-  vim.opt.clipboard = "unnamedplus"
+	vim.opt.clipboard = "unnamedplus"
 end)
 
 -- Set spell correction
@@ -59,4 +59,5 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Set config Path
+-- Set LSP diagnostics off by default
+-- vim.diagnostic.enable(false)
