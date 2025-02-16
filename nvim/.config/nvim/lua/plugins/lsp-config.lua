@@ -37,9 +37,11 @@ return {
           "ruff",
           "black",
           "isort",
+          "mypy",
           "prettierd",
           "stylua",
           "markdownlint",
+          "latexindent",
         },
       })
     end,
@@ -60,14 +62,24 @@ return {
       capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
       for _, lsp in ipairs(servers) do
-        lspconfig[lsp].setup({
-          capabilities = capabilities,
-        })
+        if lsp == "textlsp" then
+          lspconfig[lsp].setup({
+            capabilities = capabilities,
+            filetypes = { "text", "org" },
+          })
+        else
+          lspconfig[lsp].setup({
+            capabilities = capabilities,
+          })
+        end
       end
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>td", function()
+        vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+      end, { silent = true, noremap = true })
     end,
   },
   {
@@ -97,15 +109,22 @@ return {
 
         sources = {
           null_ls.builtins.formatting.stylua,
-          null_ls.builtins.formatting.prettier,
+          null_ls.builtins.formatting.prettierd,
           null_ls.builtins.formatting.black,
           null_ls.builtins.formatting.isort,
           null_ls.builtins.formatting.markdownlint,
           -- null_ls.builtins.formatting.phpcsfixer,
           -- null_ls.builtins.formatting.markdownlint,
+          require("none-ls.formatting.latexindent"), -- requires none-ls-extras.nvim
 
           --null_ls.builtins.diagnostics.stylelint,
           null_ls.builtins.diagnostics.markdownlint,
+          null_ls.builtins.diagnostics.mypy.with({
+            extra_args = function()
+              local virtual = os.getenv("VIRTUAL_ENV") or os.getenv("CONDA_PREFIX") or "/usr"
+              return { "--python-executable", virtual .. "/bin/python3" }
+            end,
+          }),
           null_ls.builtins.completion.spell,
 
           require("none-ls.diagnostics.eslint_d"), -- requires none-ls-extras.nvim

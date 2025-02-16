@@ -18,8 +18,7 @@ end)
 
 -- Set spell correction
 vim.opt.spell = true
-vim.opt.spelllang = "pt_br"
-vim.opt.spelllang = "en_us"
+vim.opt.spelllang = "pt,en"
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -59,5 +58,5 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Set LSP diagnostics off by default
--- vim.diagnostic.enable(false)
+-- Set diagnostics to false by default
+vim.diagnostic.disable()

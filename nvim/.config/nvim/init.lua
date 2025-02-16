@@ -1,4 +1,6 @@
 require("vim-options")
-require("keymaps")
 require("misc")
 require("config.lazy")
+-- vim.keymap.set("n", "<leader>td", function()
+--   vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+-- end, { silent = true, noremap = false })
