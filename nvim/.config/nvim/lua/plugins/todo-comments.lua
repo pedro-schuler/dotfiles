@@ -1,6 +1,6 @@
 return {
   "folke/todo-comments.nvim",
-  event = "VimEnter",
   dependencies = { "nvim-lua/plenary.nvim" },
+  event = "VimEnter",
   opts = { signs = false },
 }

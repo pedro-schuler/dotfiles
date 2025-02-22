@@ -41,11 +41,16 @@ return {
 					"yaml",
 				},
 				-- sync_install = false,
+				autotag = {
+					enable = true,
+				},
 				highlight = {
 					enable = true,
 					disable = { "latex", "org" },
 				},
-				indent = { enable = true },
+				indent = {
+					enable = true,
+				},
 			})
 		end,
 	},
