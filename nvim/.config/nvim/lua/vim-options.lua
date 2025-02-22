@@ -58,5 +58,19 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Setup Code Folding
+-- Use treesitter as the source of truth for folding
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+-- Use 1 column for displaying info
+vim.opt.foldcolumn = "1"
+-- This option lets the first line by highlighted
+vim.opt.foldtext = ""
+-- Set the level of folding
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 1
+-- Set how many levels should be folded
+vim.opt.foldnestmax = 4
+
 -- Set diagnostics to false by default
 vim.diagnostic.disable()
