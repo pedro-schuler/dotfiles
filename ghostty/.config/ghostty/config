@@ -101,7 +101,7 @@ font-style-bold-italic = default
 # explicitly disable it. You cannot partially disable `bold-italic`.
 # 
 # By default, synthetic styles are enabled.
-font-synthetic-style = bold,italic,bold-italic
+font-synthetic-style = false
 
 # Apply a font feature. To enable multiple font features you can repeat
 # this multiple times or use a comma-separated list of feature settings.
@@ -400,8 +400,8 @@ freetype-load-flags = hinting,force-autohint,monochrome,autohint
 #theme = "tokyonight"
 #theme = "tokyonight-day"
 #theme = "tokyonight-storm"
-#theme = "tokyonight_moon"
-theme = "tokyonight_night"
+theme = "tokyonight_moon"
+#theme = "tokyonight_night"
 # Background color for the window.
 # Specified as either hex (`#RRGGBB` or `RRGGBB`) or a named X11 color.
 background = #282c34
@@ -436,7 +436,7 @@ selection-invert-fg-bg = false
 # that text will become black or white.
 # 
 # This value does not apply to Emoji or images.
-minimum-contrast = 1
+minimum-contrast = 2
 
 # Color palette for the 256 color form that many terminal applications use.
 # The syntax of this configuration is `N=COLOR` where `N` is 0 to 255 (for
