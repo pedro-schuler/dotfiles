@@ -74,3 +74,6 @@ vim.opt.foldnestmax = 4
 
 -- Set diagnostics to false by default
 vim.diagnostic.disable()
+
+-- Toggle search highlight
+vim.keymap.set("n", "<space>/", "<cmd>let v:hlsearch=1 - v:hlsearch | echo (v:hlsearch ? ' ' : 'no') . 'hlsearch'<CR>")
