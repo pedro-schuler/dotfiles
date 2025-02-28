@@ -83,3 +83,9 @@ alias mutt-faculdade="neomutt -F ~/.config/mutt/muttrc-faculdade"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(thefuck --alias)"
+
+# Start tmux
+if ! systemctl --user is-active --quiet tmux.service; then
+    systemctl --user start tmux.service
+fi
+eval "$(tmux attach-session -d >/dev/null 2>&1)"
