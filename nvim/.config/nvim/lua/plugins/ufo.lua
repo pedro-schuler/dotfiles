@@ -15,8 +15,8 @@ return {
     require("ufo").setup()
 
     -- Options for code folding
-    -- Use 1 column for displaying info
-    vim.opt.foldcolumn = "1"
+    -- Use 0 column for displaying info
+    vim.opt.foldcolumn = "0"
     -- This option lets the first line by highlighted
     vim.opt.foldtext = ""
     -- Set the level of folding
