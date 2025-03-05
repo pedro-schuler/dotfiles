@@ -6,14 +6,14 @@ vim.wo.number = true
 vim.o.relativenumber = true
 
 -- Set indentation to 2 spaces
-vim.cmd("set expandtab") -- expand tab to spaces
-vim.cmd("set tabstop=2") -- 2 spaces for tabs
+vim.cmd("set expandtab")     -- expand tab to spaces
+vim.cmd("set tabstop=2")     -- 2 spaces for tabs
 vim.cmd("set softtabstop=2") --
-vim.cmd("set shiftwidth=2") -- 2 spaces for indent widht
+vim.cmd("set shiftwidth=2")  -- 2 spaces for indent widht
 
 -- Set clipboard for nvim
 vim.schedule(function()
-	vim.opt.clipboard = "unnamedplus"
+  vim.opt.clipboard = "unnamedplus"
 end)
 
 -- Set spell correction
@@ -68,7 +68,7 @@ vim.opt.foldcolumn = "1"
 vim.opt.foldtext = ""
 -- Set the level of folding
 vim.opt.foldlevel = 99
-vim.opt.foldlevelstart = 1
+vim.opt.foldlevelstart = 4
 -- Set how many levels should be folded
 vim.opt.foldnestmax = 4
 

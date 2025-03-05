@@ -33,7 +33,6 @@ return {
 					"lua",
 					"markdown",
 					"markdown_inline",
-					"org",
 					"php",
 					"python",
 					"regex",
@@ -41,9 +40,9 @@ return {
 					"yaml",
 				},
 				-- sync_install = false,
-				autotag = {
-					enable = true,
-				},
+				-- autotag = {
+				-- 	enable = true,
+				-- },
 				highlight = {
 					enable = true,
 					disable = { "latex", "org" },
