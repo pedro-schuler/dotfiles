@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=NetworkManager
+GenericName=Network connection manager
+TryExec=nmtui
+Exec=kitty -e nmtui
+Terminal=false
+Type=Application
+Keywords=Network;Manager;Wireless;Ethernet;Mobile;Broadband;
+Icon=network-manager
+Categories=Network;GTK;
+StartupNotify=false
