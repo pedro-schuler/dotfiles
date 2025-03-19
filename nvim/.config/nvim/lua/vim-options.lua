@@ -1,9 +1,9 @@
 -- Set highlight on search
-vim.o.hlsearch = true
+vim.opt.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
-vim.o.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Set indentation to 2 spaces
 vim.cmd("set expandtab")     -- expand tab to spaces
@@ -15,6 +15,9 @@ vim.cmd("set shiftwidth=2")  -- 2 spaces for indent widht
 vim.schedule(function()
   vim.opt.clipboard = "unnamedplus"
 end)
+
+-- Set lines to wrap
+vim.opt.wrap = true
 
 -- Set spell correction
 vim.opt.spell = true
@@ -60,20 +63,23 @@ vim.opt.scrolloff = 10
 
 -- Setup Code Folding
 -- Use treesitter as the source of truth for folding
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 -- Use 1 column for displaying info
-vim.opt.foldcolumn = "1"
+-- vim.opt.foldcolumn = "1"
 -- This option lets the first line by highlighted
-vim.opt.foldtext = ""
+-- vim.opt.foldtext = ""
 -- Set the level of folding
-vim.opt.foldlevel = 99
-vim.opt.foldlevelstart = 4
+-- vim.opt.foldlevel = 99
+-- vim.opt.foldlevelstart = 4
 -- Set how many levels should be folded
-vim.opt.foldnestmax = 4
+-- vim.opt.foldnestmax = 4
 
 -- Set diagnostics to false by default
 vim.diagnostic.disable()
 
 -- Toggle search highlight
 vim.keymap.set("n", "<space>/", "<cmd>let v:hlsearch=1 - v:hlsearch | echo (v:hlsearch ? ' ' : 'no') . 'hlsearch'<CR>")
+
+--- Diagnostic keymaps
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })

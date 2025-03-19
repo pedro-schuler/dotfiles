@@ -12,6 +12,7 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-nvim-lsp-signature-help",
 			"micangl/cmp-vimtex",
 		},
 		config = function()
@@ -28,6 +29,7 @@ return {
 						require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
 					end,
 				},
+				completion = { completeopt = "menu,menuone,noinsert" },
 				window = {
 					completion = cmp.config.window.bordered(),
 					documentation = cmp.config.window.bordered(),
@@ -40,13 +42,14 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				}),
 				sources = cmp.config.sources({
-					{ name = "luasnip" }, -- For luasnip users.
 					{ name = "nvim_lsp" },
+					{ name = "luasnip" }, -- For luasnip users.
 					{ name = "buffer" },
 					{ name = "path" },
 					{ name = "vimtex" },
 					{ name = "render-markdown" },
 					{ name = "orgmode" },
+					{ name = "nvim_lsp_signature_help" },
 				}),
 				formatting = {
 					format = lspkind.cmp_format({
