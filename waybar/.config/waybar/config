@@ -130,7 +130,8 @@
         "format-ethernet": " {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠ Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "nm-connection-editor" 
+        "on-click": "nm-connection-editor",
+        "on-click-right": "kitty -e nmtui"
     },
 
     "hyprland/window": {
