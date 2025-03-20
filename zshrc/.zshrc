@@ -4,7 +4,7 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
-export PATH="$HOME/.config/juliaup/bin:$HOME/.local/texlive/2024/bin/x86_64-linux:$HOME/.local/bin/:$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/.config/juliaup/bin:$HOME/.local/texlive/2025/bin/x86_64-linux:$HOME/.local/bin/:$HOME/.config/emacs/bin:$PATH"
 export EDITOR="nvim"
 
 #Iniciar oh my posh
@@ -85,7 +85,7 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(thefuck --alias)"
 
 # Start tmux
-if ! systemctl --user is-active --quiet tmux.service; then
-    systemctl --user start tmux.service
-fi
-eval "$(tmux attach-session -d >/dev/null 2>&1)"
+#if ! systemctl --user is-active --quiet tmux.service; then
+#    systemctl --user start tmux.service
+#fi
+#eval "$(tmux attach-session -d >/dev/null 2>&1)"
