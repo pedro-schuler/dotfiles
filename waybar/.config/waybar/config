@@ -87,7 +87,8 @@
       "timezone": "America/Recife",
       "locale": "pt_BR.utf8",
       "format": " {:L%e %b %Y}", // Icon: calendar-alt
-      "tooltip-format": "{:L%e %B %Y}"
+      "tooltip-format": "{:L%e %B %Y}",
+      "on-click": "kitty -e calcurse"
     },
 
     "cpu": {
