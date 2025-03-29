@@ -6,14 +6,14 @@ vim.wo.number = true
 vim.opt.relativenumber = true
 
 -- Set indentation to 2 spaces
-vim.cmd("set expandtab")     -- expand tab to spaces
-vim.cmd("set tabstop=2")     -- 2 spaces for tabs
+vim.cmd("set expandtab") -- expand tab to spaces
+vim.cmd("set tabstop=2") -- 2 spaces for tabs
 vim.cmd("set softtabstop=2") --
-vim.cmd("set shiftwidth=2")  -- 2 spaces for indent widht
+vim.cmd("set shiftwidth=2") -- 2 spaces for indent widht
 
 -- Set clipboard for nvim
 vim.schedule(function()
-  vim.opt.clipboard = "unnamedplus"
+	vim.opt.clipboard = "unnamedplus"
 end)
 
 -- Set lines to wrap
@@ -76,7 +76,7 @@ vim.opt.scrolloff = 10
 -- vim.opt.foldnestmax = 4
 
 -- Set diagnostics to false by default
-vim.diagnostic.disable()
+vim.diagnostic.enable(false)
 
 -- Toggle search highlight
 vim.keymap.set("n", "<space>/", "<cmd>let v:hlsearch=1 - v:hlsearch | echo (v:hlsearch ? ' ' : 'no') . 'hlsearch'<CR>")
