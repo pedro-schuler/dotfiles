@@ -2,8 +2,8 @@
 Version=1.0
 Type=Application
 Name=PyCharm Professional Edition
-Icon=/opt/pycharm-2024.3.1/bin/pycharm.svg
-Exec="/opt/pycharm-2024.3.1/bin/pycharm" %f
+Icon=/opt/pycharm-2024.3.5/bin/pycharm.svg
+Exec="/opt/pycharm-2024.3.5/bin/pycharm" %f
 Comment=Python IDE for Professional Developers
 Categories=Development;IDE;
 Terminal=false
