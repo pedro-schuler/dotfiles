@@ -150,7 +150,7 @@
             "2": "", // Icon: firefox-browser
             "3": "", // Icon: mail
             "4": "", // Icon: code
-            "5": "", // Icon: audio 
+            "5": "🎝", // Icon: audio 
             "urgent": "",
             "default": ""
         }
