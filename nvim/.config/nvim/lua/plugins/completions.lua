@@ -34,8 +34,23 @@ return {
         nerd_font_variant = "mono",
       },
       completion = {
+        accept = {
+          -- experimental auto-brackets support
+          auto_brackets = {
+            enabled = true,
+          },
+        },
+        menu = {
+          draw = {
+            treesitter = { "lsp" },
+          },
+        },
         documentation = {
-          auto_show = false,
+          auto_show = true,
+          auto_show_delay_ms = 200,
+        },
+        ghost_text = {
+          enabled = vim.g.ai_cmp,
         },
       },
       sources = {
@@ -49,6 +64,7 @@ return {
         },
         per_filetype = {
           org = { "orgmode" },
+          codecompanion = { "codecompanion" },
         },
         providers = {
           vimtex = {

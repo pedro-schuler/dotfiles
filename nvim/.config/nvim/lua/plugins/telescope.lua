@@ -6,6 +6,7 @@ return {
 		dependencies = {
 			"nvim-telescope/telescope-ui-select.nvim",
 			"nvim-lua/plenary.nvim",
+			"debugloop/telescope-undo.nvim",
 			{ -- If encountering errors, see telescope-fzf-native README for installation instructions
 				"nvim-telescope/telescope-fzf-native.nvim",
 				build = "make",
@@ -33,11 +34,21 @@ return {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown({}),
 					},
+					["undo"] = {
+						use_delta = true,
+						side_by_side = true,
+						layout_strategy = "vertical",
+						layout_config = {
+							preview_height = 0.8,
+						},
+					},
 				},
 			})
 			require("telescope").load_extension("ui-select")
 			require("telescope").load_extension("fzf")
+			require("telescope").load_extension("undo")
 
+			vim.keymap.set("n", "<leader>u", "<cmd>Telescope undo<cr>")
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[F]ind [H]elp" })
 			vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "[F]ind [K]eymaps" })
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "[F]ind [F]iles" })

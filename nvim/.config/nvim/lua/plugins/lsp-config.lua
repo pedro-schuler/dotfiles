@@ -171,7 +171,8 @@ return {
         dynamicRegistration = false,
         lineFoldingOnly = true,
       }
-      capabilities = vim.tbl_deep_extend("force", capabilities, require('blink.cmp').get_lsp_capabilities({}, false))
+      capabilities =
+          vim.tbl_deep_extend("force", capabilities, require("blink.cmp").get_lsp_capabilities({}, false))
 
       --  Add any additional override configuration in the following tables. Available keys are:
       --  - cmd (table): Override the default command used to start the server
@@ -269,7 +270,7 @@ return {
               group = augroup,
               buffer = bufnr,
               callback = function()
-                vim.lsp.buf.format({ async = false })
+                vim.lsp.buf.format({ async = false, timeout_ms = 2000 })
               end,
             })
           end
@@ -295,7 +296,7 @@ return {
           null_ls.builtins.completion.spell,
 
           require("none-ls.diagnostics.eslint_d"), -- requires none-ls-extras.nvim
-          require("none-ls.diagnostics.ruff"),     -- requires none-ls-extras.nvim
+          require("none-ls.diagnostics.ruff"), -- requires none-ls-extras.nvim
         },
       })
 
