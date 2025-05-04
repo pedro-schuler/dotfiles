@@ -4,8 +4,8 @@ GenericName=Terminal Music Player
 Comment=Listen to music
 Comment[pt_BR]=Escute musica no terminal
 Icon=/usr/share/icons/Papirus-Dark/48x48/apps/spotify-client.svg
-TryExec=kitty -e ncspot
-Exec=kitty --title=ncspot ncspot
+TryExec=kitty -c ~/.config/kitty/kitty.conf -c ~/.config/kitty/kitty_no_opacity.conf -e ncspot
+Exec=kitty --title=ncspot -c ~/.config/kitty/kitty.conf -c ~/.config/kitty/kitty_no_opacity.conf -e ncspot
 Terminal=false
 Type=Application
 Keywords=Music;Player;
