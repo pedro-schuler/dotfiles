@@ -1,11 +1,10 @@
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/key-bindings.zsh
-
 export PATH="$HOME/.config/juliaup/bin:$HOME/.local/texlive/2025/bin/x86_64-linux:$HOME/.local/bin/:$HOME/.config/emacs/bin:$PATH"
 export EDITOR="nvim"
+# Add Carapace bridges to provide completions
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 
 #Iniciar oh my posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/config.toml)"
@@ -38,6 +37,10 @@ zinit snippet OMZP::command-not-found
 # Load completions
 autoload -Uz compinit && compinit
 
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+source <(carapace _carapace)
+
 zinit cdreplay -q
 
 # Keybindings
@@ -59,8 +62,10 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 # Aliases
 alias vim='nvim'
