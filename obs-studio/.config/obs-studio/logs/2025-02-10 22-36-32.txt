@@ -1,0 +1,974 @@
+22:36:32.508: Platform: Wayland
+22:36:32.509: CPU Name: Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz
+22:36:32.509: CPU Speed: 2999.451MHz
+22:36:32.509: Physical Cores: 2, Logical Cores: 4
+22:36:32.509: Physical Memory: 15884MB Total, 13723MB Free
+22:36:32.509: Kernel Version: Linux 6.13.1-arch2-1
+22:36:32.509: Distribution: "Arch Linux" Unknown
+22:36:32.509: Desktop Environment: Hyprland (Hyprland)
+22:36:32.509: Session Type: wayland
+22:36:32.512: Qt Version: 6.8.2 (runtime), 6.8.1 (compiled)
+22:36:32.512: Portable mode: false
+22:36:32.599: OBS 31.0.1 (linux)
+22:36:32.599: ---------------------------------
+22:36:32.600: ---------------------------------
+22:36:32.600: audio settings reset:
+22:36:32.600: 	samples per sec: 48000
+22:36:32.600: 	speakers:        2
+22:36:32.600: 	max buffering:   960 milliseconds
+22:36:32.600: 	buffering type:  dynamically increasing
+22:36:32.604: ---------------------------------
+22:36:32.604: Initializing OpenGL...
+22:36:32.604: Using EGL/Wayland
+22:36:32.652: Initialized EGL 1.5
+22:36:32.676: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 520 (SKL GT2)
+22:36:32.676: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.3.4-arch1.1, shading language 4.60
+22:36:32.878: ---------------------------------
+22:36:32.878: video settings reset:
+22:36:32.878: 	base resolution:   1920x1080
+22:36:32.878: 	output resolution: 852x480
+22:36:32.878: 	downscale filter:  Bicubic
+22:36:32.878: 	fps:               30/1
+22:36:32.878: 	format:            NV12
+22:36:32.878: 	YUV mode:          Rec. 709/Partial
+22:36:32.878: NV12 texture support enabled
+22:36:32.878: P010 texture support not available
+22:36:32.884: Audio monitoring device:
+22:36:32.884: 	name: Padrão
+22:36:32.884: 	id: default
+22:36:32.886: ---------------------------------
+22:36:32.895: Failed to load 'en-US' text for module: 'decklink-captions.so'
+22:36:32.905: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+22:36:32.916: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+22:36:32.916: Failed to initialize module 'decklink.so'
+22:36:33.125: [pipewire] Available capture sources:
+22:36:33.125: [pipewire]     - Monitor source
+22:36:33.125: [pipewire]     - Window source
+22:36:33.155: v4l2loopback not installed, virtual camera not registered
+22:36:33.634: VAAPI: API version 1.22
+22:36:33.642: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+22:36:33.642: FFmpeg VAAPI H264 encoding not supported
+22:36:33.660: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+22:36:33.660: FFmpeg VAAPI AV1 encoding not supported
+22:36:33.676: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+22:36:33.676: FFmpeg VAAPI HEVC encoding not supported
+22:36:33.715: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+22:36:33.715: 
+22:36:33.715: NVENC not supported
+22:36:33.715: Failed to initialize module 'obs-nvenc.so'
+22:36:33.874: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+22:36:33.874: 
+22:36:33.877: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+22:36:33.877: 
+22:36:33.878: Module '/usr/lib/obs-plugins/obs-websocket.so' not loaded
+22:36:33.919: ---------------------------------
+22:36:33.919:   Loaded Modules:
+22:36:33.919:     text-freetype2.so
+22:36:33.919:     rtmp-services.so
+22:36:33.920:     obs-x264.so
+22:36:33.920:     obs-webrtc.so
+22:36:33.920:     obs-vst.so
+22:36:33.920:     obs-transitions.so
+22:36:33.920:     obs-qsv11.so
+22:36:33.920:     obs-outputs.so
+22:36:33.920:     obs-libfdk.so
+22:36:33.920:     obs-filters.so
+22:36:33.920:     obs-ffmpeg.so
+22:36:33.920:     linux-v4l2.so
+22:36:33.920:     linux-pulseaudio.so
+22:36:33.920:     linux-pipewire.so
+22:36:33.920:     linux-jack.so
+22:36:33.920:     linux-capture.so
+22:36:33.920:     linux-alsa.so
+22:36:33.920:     image-source.so
+22:36:33.920:     frontend-tools.so
+22:36:33.920:     decklink-output-ui.so
+22:36:33.920:     decklink-captions.so
+22:36:33.920: ---------------------------------
+22:36:33.920: ---------------------------------
+22:36:33.920: Available Encoders:
+22:36:33.920:   Video Encoders:
+22:36:33.920: 	- ffmpeg_svt_av1 (SVT-AV1)
+22:36:33.920: 	- ffmpeg_aom_av1 (AOM AV1)
+22:36:33.920: 	- obs_x264 (x264)
+22:36:33.920:   Audio Encoders:
+22:36:33.920: 	- ffmpeg_aac (FFmpeg AAC)
+22:36:33.920: 	- ffmpeg_opus (FFmpeg Opus)
+22:36:33.920: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+22:36:33.920: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+22:36:33.920: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+22:36:33.920: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+22:36:33.920: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+22:36:33.920: 	- libfdk_aac (libfdk AAC)
+22:36:33.920: ==== Startup complete ===============================================
+22:36:33.969: All scene data cleared
+22:36:33.969: ------------------------------------------------
+22:36:33.992: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.7) 15.0.0'
+22:36:33.992: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+22:36:33.992: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+22:36:33.992: [Loaded global audio device]: 'Áudio do desktop'
+22:36:33.993: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.7) 15.0.0'
+22:36:33.993: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+22:36:33.993: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+22:36:33.994: [Loaded global audio device]: 'Mic/Aux'
+22:36:33.994: PipeWire initialized
+22:36:33.995: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.7) 15.0.0'
+22:36:33.996: pulse-input: Audio format: s24le, 48000 Hz, 1 channels
+22:36:33.996: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+22:36:33.996: pulse-input: Started recording from 'alsa_input.usb-3142_Fifine_Microphone-00.mono-fallback'
+22:36:33.998: Switched to scene 'Cena'
+22:36:33.998: ------------------------------------------------
+22:36:33.998: Loaded scenes:
+22:36:33.998: - scene 'Cena':
+22:36:33.998:     - source: 'Captura de tela (PipeWire)' (pipewire-screen-capture-source)
+22:36:33.998:     - source: 'Dispositivo de Entrada de Áudio (PulseAudio)' (pulse_input_capture)
+22:36:33.998: ------------------------------------------------
+22:36:34.078: [pipewire] Screencast session created
+22:36:34.627: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Áudio do desktop)
+22:36:34.627: 
+22:36:34.819: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+22:36:34.819: 
+22:36:34.890: [rtmp-services plugin] Successfully updated file 'services.json' (version 265)
+22:36:34.890: [rtmp-services plugin] Successfully updated package (version 265)
+22:36:40.463: [pipewire] Asking for monitor and window
+22:36:40.468: [pipewire] source selected, setting up screencast
+22:36:40.478: [pipewire] Server version: 1.2.7
+22:36:40.478: [pipewire] Library version: 1.2.7
+22:36:40.478: [pipewire] Header version: 1.2.7
+22:36:40.478: [pipewire] Created stream 0x5eb69efa8430
+22:36:40.478: [pipewire] Stream 0x5eb69efa8430 state: "connecting" (error: none)
+22:36:40.478: [pipewire] Playing stream 0x5eb69efa8430
+22:36:40.480: [pipewire] Stream 0x5eb69efa8430 state: "paused" (error: none)
+22:36:40.516: [pipewire] Negotiated format:
+22:36:40.516: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+22:36:40.516: [pipewire]     Modifier: 0x0
+22:36:40.516: [pipewire]     Size: 1920x1080
+22:36:40.516: [pipewire]     Framerate: 0/1
+22:36:40.522: [pipewire] Negotiated format:
+22:36:40.522: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+22:36:40.522: [pipewire]     Modifier: 0x100000000000004
+22:36:40.522: [pipewire]     Size: 1920x1080
+22:36:40.522: [pipewire]     Framerate: 0/1
+22:36:40.533: [pipewire] Stream 0x5eb69efa8430 state: "streaming" (error: none)
+22:36:40.546: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+22:36:40.547: [pipewire] Renegotiating stream
+22:36:40.547: [pipewire] Stream 0x5eb69efa8430 state: "paused" (error: none)
+22:36:40.548: [pipewire] Negotiated format:
+22:36:40.548: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+22:36:40.548: [pipewire]     Modifier: 0x100000000000004
+22:36:40.548: [pipewire]     Size: 1920x1080
+22:36:40.548: [pipewire]     Framerate: 0/1
+22:36:40.551: [pipewire] Negotiated format:
+22:36:40.552: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+22:36:40.552: [pipewire]     Modifier: 0x100000000000002
+22:36:40.552: [pipewire]     Size: 1920x1080
+22:36:40.552: [pipewire]     Framerate: 0/1
+22:36:40.564: [pipewire] Negotiated format:
+22:36:40.564: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+22:36:40.564: [pipewire]     Modifier: 0x100000000000002
+22:36:40.564: [pipewire]     Size: 1920x1080
+22:36:40.564: [pipewire]     Framerate: 0/1
+22:36:40.568: [pipewire] Negotiated format:
+22:36:40.568: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+22:36:40.568: [pipewire]     Modifier: 0x100000000000002
+22:36:40.568: [pipewire]     Size: 1920x1080
+22:36:40.568: [pipewire]     Framerate: 0/1
+22:36:40.578: [pipewire] Stream 0x5eb69efa8430 state: "streaming" (error: none)
+22:38:36.677: ---------------------------------
+22:38:36.677: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:38:36.677: [x264 encoder: 'simple_video_recording'] profile: high
+22:38:36.677: [x264 encoder: 'simple_video_recording'] settings:
+22:38:36.677: 	rate_control: CRF
+22:38:36.677: 	bitrate:      0
+22:38:36.677: 	buffer size:  0
+22:38:36.677: 	crf:          18
+22:38:36.677: 	fps_num:      30
+22:38:36.677: 	fps_den:      1
+22:38:36.677: 	width:        852
+22:38:36.677: 	height:       480
+22:38:36.677: 	keyint:       250
+22:38:36.677: 
+22:38:36.680: libfdk_aac encoder created
+22:38:36.680: libfdk_aac bitrate: 192, channels: 2
+22:38:36.689: ==== Recording Start ===============================================
+22:38:36.689: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-38-36.mkv'...
+22:38:45.890: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-38-36.mkv' stopped
+22:38:45.890: Output 'simple_file_output': stopping
+22:38:45.890: Output 'simple_file_output': Total frames output: 256
+22:38:45.890: Output 'simple_file_output': Total drawn frames: 276
+22:38:45.890: ==== Recording Stop ================================================
+22:38:45.897: libfdk_aac encoder destroyed
+22:40:01.321: ---------------------------------
+22:40:01.321: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:40:01.321: [x264 encoder: 'simple_video_recording'] profile: high
+22:40:01.321: [x264 encoder: 'simple_video_recording'] settings:
+22:40:01.321: 	rate_control: CRF
+22:40:01.321: 	bitrate:      0
+22:40:01.321: 	buffer size:  0
+22:40:01.321: 	crf:          18
+22:40:01.321: 	fps_num:      30
+22:40:01.321: 	fps_den:      1
+22:40:01.321: 	width:        852
+22:40:01.321: 	height:       480
+22:40:01.321: 	keyint:       250
+22:40:01.321: 
+22:40:01.323: libfdk_aac encoder created
+22:40:01.323: libfdk_aac bitrate: 192, channels: 2
+22:40:01.330: ==== Recording Start ===============================================
+22:40:01.330: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-40-01.mkv'...
+22:40:05.692: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-40-01.mkv' stopped
+22:40:05.692: Output 'simple_file_output': stopping
+22:40:05.692: Output 'simple_file_output': Total frames output: 110
+22:40:05.692: Output 'simple_file_output': Total drawn frames: 131
+22:40:05.692: ==== Recording Stop ================================================
+22:40:05.700: libfdk_aac encoder destroyed
+22:41:04.771: ---------------------------------
+22:41:04.771: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:41:04.771: [x264 encoder: 'simple_video_recording'] profile: high
+22:41:04.771: [x264 encoder: 'simple_video_recording'] settings:
+22:41:04.771: 	rate_control: CRF
+22:41:04.771: 	bitrate:      0
+22:41:04.771: 	buffer size:  0
+22:41:04.771: 	crf:          18
+22:41:04.771: 	fps_num:      30
+22:41:04.771: 	fps_den:      1
+22:41:04.771: 	width:        852
+22:41:04.771: 	height:       480
+22:41:04.771: 	keyint:       250
+22:41:04.771: 
+22:41:04.773: libfdk_aac encoder created
+22:41:04.773: libfdk_aac bitrate: 192, channels: 2
+22:41:04.777: ==== Recording Start ===============================================
+22:41:04.777: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-41-04.mkv'...
+22:41:09.491: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-41-04.mkv' stopped
+22:41:09.491: Output 'simple_file_output': stopping
+22:41:09.491: Output 'simple_file_output': Total frames output: 121
+22:41:09.491: Output 'simple_file_output': Total drawn frames: 142
+22:41:09.491: ==== Recording Stop ================================================
+22:41:09.494: libfdk_aac encoder destroyed
+22:41:58.478: ---------------------------------
+22:41:58.478: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:41:58.478: [x264 encoder: 'simple_video_recording'] profile: high
+22:41:58.478: [x264 encoder: 'simple_video_recording'] settings:
+22:41:58.478: 	rate_control: CRF
+22:41:58.478: 	bitrate:      0
+22:41:58.478: 	buffer size:  0
+22:41:58.478: 	crf:          18
+22:41:58.478: 	fps_num:      30
+22:41:58.478: 	fps_den:      1
+22:41:58.478: 	width:        852
+22:41:58.478: 	height:       480
+22:41:58.478: 	keyint:       250
+22:41:58.478: 
+22:41:58.480: libfdk_aac encoder created
+22:41:58.480: libfdk_aac bitrate: 192, channels: 2
+22:41:58.484: ==== Recording Start ===============================================
+22:41:58.484: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-41-58.mkv'...
+22:42:02.781: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-41-58.mkv' stopped
+22:42:02.781: Output 'simple_file_output': stopping
+22:42:02.781: Output 'simple_file_output': Total frames output: 109
+22:42:02.781: Output 'simple_file_output': Total drawn frames: 129
+22:42:02.781: ==== Recording Stop ================================================
+22:42:02.783: libfdk_aac encoder destroyed
+22:43:31.477: ---------------------------------
+22:43:31.477: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:43:31.477: [x264 encoder: 'simple_video_recording'] profile: high
+22:43:31.477: [x264 encoder: 'simple_video_recording'] settings:
+22:43:31.477: 	rate_control: CRF
+22:43:31.477: 	bitrate:      0
+22:43:31.477: 	buffer size:  0
+22:43:31.477: 	crf:          18
+22:43:31.477: 	fps_num:      30
+22:43:31.477: 	fps_den:      1
+22:43:31.477: 	width:        852
+22:43:31.477: 	height:       480
+22:43:31.477: 	keyint:       250
+22:43:31.477: 
+22:43:31.479: libfdk_aac encoder created
+22:43:31.479: libfdk_aac bitrate: 192, channels: 2
+22:43:31.481: ==== Recording Start ===============================================
+22:43:31.481: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-43-31.mkv'...
+22:43:37.392: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-43-31.mkv' stopped
+22:43:37.392: Output 'simple_file_output': stopping
+22:43:37.392: Output 'simple_file_output': Total frames output: 157
+22:43:37.392: Output 'simple_file_output': Total drawn frames: 178
+22:43:37.392: ==== Recording Stop ================================================
+22:43:37.395: libfdk_aac encoder destroyed
+22:44:34.829: ---------------------------------
+22:44:34.829: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:44:34.829: [x264 encoder: 'simple_video_recording'] profile: high
+22:44:34.829: [x264 encoder: 'simple_video_recording'] settings:
+22:44:34.829: 	rate_control: CRF
+22:44:34.829: 	bitrate:      0
+22:44:34.829: 	buffer size:  0
+22:44:34.829: 	crf:          18
+22:44:34.829: 	fps_num:      30
+22:44:34.829: 	fps_den:      1
+22:44:34.829: 	width:        852
+22:44:34.829: 	height:       480
+22:44:34.829: 	keyint:       250
+22:44:34.829: 
+22:44:34.831: libfdk_aac encoder created
+22:44:34.831: libfdk_aac bitrate: 192, channels: 2
+22:44:34.835: ==== Recording Start ===============================================
+22:44:34.835: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-44-34.mkv'...
+22:44:39.815: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-44-34.mkv' stopped
+22:44:39.815: Output 'simple_file_output': stopping
+22:44:39.815: Output 'simple_file_output': Total frames output: 129
+22:44:39.815: Output 'simple_file_output': Total drawn frames: 149
+22:44:39.816: ==== Recording Stop ================================================
+22:44:39.817: libfdk_aac encoder destroyed
+22:45:02.362: ---------------------------------
+22:45:02.363: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:45:02.363: [x264 encoder: 'simple_video_recording'] profile: high
+22:45:02.363: [x264 encoder: 'simple_video_recording'] settings:
+22:45:02.363: 	rate_control: CRF
+22:45:02.363: 	bitrate:      0
+22:45:02.363: 	buffer size:  0
+22:45:02.363: 	crf:          18
+22:45:02.363: 	fps_num:      30
+22:45:02.363: 	fps_den:      1
+22:45:02.363: 	width:        852
+22:45:02.363: 	height:       480
+22:45:02.363: 	keyint:       250
+22:45:02.363: 
+22:45:02.365: libfdk_aac encoder created
+22:45:02.365: libfdk_aac bitrate: 192, channels: 2
+22:45:02.367: ==== Recording Start ===============================================
+22:45:02.367: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-45-02.mkv'...
+22:45:06.590: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-45-02.mkv' stopped
+22:45:06.590: Output 'simple_file_output': stopping
+22:45:06.590: Output 'simple_file_output': Total frames output: 106
+22:45:06.590: Output 'simple_file_output': Total drawn frames: 127
+22:45:06.591: ==== Recording Stop ================================================
+22:45:06.594: libfdk_aac encoder destroyed
+22:45:46.307: v4l2-input: Start capture from 
+22:45:46.307: v4l2-input: Unable to open device
+22:45:46.307: v4l2-input: Initialization failed, errno: Arquivo ou diretório inexistente
+22:45:46.310: User added source 'Dispositivo de captura de vídeo (V4L2)' (v4l2_input) to scene 'Cena'
+22:45:46.323: v4l2-input: /dev/video3 seems to not support video capture
+22:45:46.324: v4l2-input: /dev/video1 seems to not support video capture
+22:45:46.400: v4l2-input: Found device 'Intel(R) RealSense(TM) 3D Camer' at /dev/video2
+22:45:46.400: v4l2-input: Found device 'Intel(R) RealSense(TM) 3D Camer' at /dev/video0
+22:45:46.402: v4l2-input: Found input 'Camera 5' (Index 0)
+22:45:46.403: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+22:45:46.403: v4l2-input: Pixelformat: 16-bit Depth (unavailable)
+22:45:46.403: v4l2-input: Pixelformat: Planar 10:16 Greyscale Depth (unavailable)
+22:45:46.403: v4l2-input: Pixelformat: 10-bit Greyscale (unavailable)
+22:45:46.403: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+22:45:46.403: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+22:45:46.403: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+22:45:46.403: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+22:45:46.404: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+22:45:46.404: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:45:46.407: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+22:45:46.407: v4l2-input: Pixelformat: 16-bit Depth (unavailable)
+22:45:46.407: v4l2-input: Pixelformat: Planar 10:16 Greyscale Depth (unavailable)
+22:45:46.407: v4l2-input: Pixelformat: 10-bit Greyscale (unavailable)
+22:45:46.407: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+22:45:46.407: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+22:45:46.407: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+22:45:46.407: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+22:45:46.407: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+22:45:46.408: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:45:46.412: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:45:46.418: v4l2-input: Start capture from /dev/video2
+22:45:46.418: v4l2-input: Input: 0
+22:45:46.419: v4l2-input: Resolution: 640x240
+22:45:46.419: v4l2-input: Pixelformat: YUYV
+22:45:46.419: v4l2-input: Linesize: 1280 Bytes
+22:45:46.419: v4l2-input: Framerate: 30.00 fps
+22:45:46.419: v4l2-input: /dev/video2: select timeout set to 166666 (5x frame periods)
+22:45:46.586: v4l2-input: /dev/video2: select timed out
+22:45:46.586: v4l2-input: /dev/video2: failed to log status
+22:45:46.753: v4l2-input: /dev/video2: select timed out
+22:45:46.754: v4l2-input: /dev/video2: failed to log status
+22:46:01.665: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:46:01.696: v4l2-input: /dev/video2: Stopped capture after 449 frames
+22:46:01.699: v4l2-input: Start capture from /dev/video2
+22:46:01.699: v4l2-input: Input: 0
+22:46:01.700: v4l2-input: Resolution: 640x240
+22:46:01.700: v4l2-input: Pixelformat: BGR3
+22:46:01.700: v4l2-input: Linesize: 1920 Bytes
+22:46:01.700: v4l2-input: Framerate: 30.00 fps
+22:46:01.700: v4l2-input: /dev/video2: select timeout set to 166666 (5x frame periods)
+22:46:04.159: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:46:04.188: v4l2-input: /dev/video2: Stopped capture after 73 frames
+22:46:04.191: v4l2-input: Start capture from /dev/video2
+22:46:04.192: v4l2-input: Input: 0
+22:46:04.193: v4l2-input: Resolution: 640x240
+22:46:04.193: v4l2-input: Pixelformat: YU12
+22:46:04.193: v4l2-input: Linesize: 640 Bytes
+22:46:04.193: v4l2-input: Framerate: 30.00 fps
+22:46:04.193: v4l2-input: /dev/video2: select timeout set to 166666 (5x frame periods)
+22:46:06.648: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:46:06.680: v4l2-input: /dev/video2: Stopped capture after 73 frames
+22:46:06.682: v4l2-input: Start capture from /dev/video2
+22:46:06.684: v4l2-input: Input: 0
+22:46:06.684: v4l2-input: Resolution: 640x240
+22:46:06.684: v4l2-input: Pixelformat: YV12
+22:46:06.684: v4l2-input: Linesize: 640 Bytes
+22:46:06.684: v4l2-input: Framerate: 30.00 fps
+22:46:06.684: v4l2-input: /dev/video2: select timeout set to 166666 (5x frame periods)
+22:46:11.637: v4l2-input: Found input 'Camera 1' (Index 0)
+22:46:11.637: v4l2-controls: setting default for Power Line Frequency to 2
+22:46:11.637: v4l2-controls: setting default for Auto Exposure to 3
+22:46:11.638: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+22:46:11.638: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+22:46:11.638: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+22:46:11.638: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+22:46:11.638: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+22:46:11.639: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:46:11.669: v4l2-input: /dev/video2: Stopped capture after 148 frames
+22:46:11.672: v4l2-input: Start capture from /dev/video0
+22:46:11.673: v4l2-input: Input: 0
+22:46:11.674: v4l2-input: Resolution: 1920x1080
+22:46:11.674: v4l2-input: Pixelformat: YV12
+22:46:11.674: v4l2-input: Linesize: 1920 Bytes
+22:46:11.674: v4l2-input: Framerate: 30.00 fps
+22:46:11.675: v4l2-input: /dev/video0: select timeout set to 166666 (5x frame periods)
+22:46:19.642: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+22:46:19.708: v4l2-input: /dev/video0: Stopped capture after 124 frames
+22:46:19.713: v4l2-input: Start capture from /dev/video0
+22:46:19.714: v4l2-input: Input: 0
+22:46:19.715: v4l2-input: Resolution: 1920x1080
+22:46:19.715: v4l2-input: Pixelformat: YUYV
+22:46:19.715: v4l2-input: Linesize: 3840 Bytes
+22:46:19.715: v4l2-input: Framerate: 30.00 fps
+22:46:19.718: v4l2-input: /dev/video0: select timeout set to 166666 (5x frame periods)
+22:46:23.730: v4l2-input: /dev/video0: select timed out
+22:46:23.731: v4l2-input: /dev/video0: failed to log status
+22:47:19.453: ---------------------------------
+22:47:19.453: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:47:19.453: [x264 encoder: 'simple_video_recording'] profile: high
+22:47:19.453: [x264 encoder: 'simple_video_recording'] settings:
+22:47:19.453: 	rate_control: CRF
+22:47:19.453: 	bitrate:      0
+22:47:19.453: 	buffer size:  0
+22:47:19.453: 	crf:          18
+22:47:19.453: 	fps_num:      30
+22:47:19.453: 	fps_den:      1
+22:47:19.453: 	width:        852
+22:47:19.453: 	height:       480
+22:47:19.453: 	keyint:       250
+22:47:19.453: 
+22:47:19.456: libfdk_aac encoder created
+22:47:19.457: libfdk_aac bitrate: 192, channels: 2
+22:47:19.461: ==== Recording Start ===============================================
+22:47:19.461: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-47-19.mkv'...
+22:47:21.357: v4l2-input: /dev/video0: select timed out
+22:47:21.357: v4l2-input: /dev/video0: failed to log status
+22:47:24.476: v4l2-input: /dev/video0: select timed out
+22:47:24.476: v4l2-input: /dev/video0: failed to log status
+22:47:26.493: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-47-19.mkv' stopped
+22:47:26.493: Output 'simple_file_output': stopping
+22:47:26.493: Output 'simple_file_output': Total frames output: 190
+22:47:26.493: Output 'simple_file_output': Total drawn frames: 211
+22:47:26.493: ==== Recording Stop ================================================
+22:47:26.497: libfdk_aac encoder destroyed
+22:48:03.108: v4l2-input: /dev/video0: select timed out
+22:48:03.109: v4l2-input: /dev/video0: failed to log status
+22:48:07.817: ---------------------------------
+22:48:07.818: [x264 encoder: 'simple_video_recording'] preset: veryfast
+22:48:07.818: [x264 encoder: 'simple_video_recording'] profile: high
+22:48:07.818: [x264 encoder: 'simple_video_recording'] settings:
+22:48:07.818: 	rate_control: CRF
+22:48:07.818: 	bitrate:      0
+22:48:07.818: 	buffer size:  0
+22:48:07.818: 	crf:          18
+22:48:07.818: 	fps_num:      30
+22:48:07.818: 	fps_den:      1
+22:48:07.818: 	width:        852
+22:48:07.818: 	height:       480
+22:48:07.818: 	keyint:       250
+22:48:07.818: 
+22:48:07.828: libfdk_aac encoder created
+22:48:07.828: libfdk_aac bitrate: 192, channels: 2
+22:48:07.835: ==== Recording Start ===============================================
+22:48:07.835: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 22-48-07.mkv'...
+22:48:11.368: v4l2-input: /dev/video0: select timed out
+22:48:11.368: v4l2-input: /dev/video0: failed to log status
+22:48:13.143: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 22-48-07.mkv' stopped
+22:48:13.143: Output 'simple_file_output': stopping
+22:48:13.143: Output 'simple_file_output': Total frames output: 138
+22:48:13.143: Output 'simple_file_output': Total drawn frames: 159
+22:48:13.145: ==== Recording Stop ================================================
+22:48:13.163: libfdk_aac encoder destroyed
+22:48:17.160: v4l2-input: /dev/video0: select timed out
+22:48:17.160: v4l2-input: /dev/video0: failed to log status
+22:52:53.654: v4l2-input: /dev/video0: select timed out
+22:52:53.655: v4l2-input: /dev/video0: failed to log status
+22:57:08.081: v4l2-input: /dev/video0: select timed out
+22:57:08.081: v4l2-input: /dev/video0: failed to log status
+23:54:45.037: v4l2-input: /dev/video0: select timed out
+23:54:45.037: v4l2-input: /dev/video0: failed to log status
+23:54:49.167: v4l2-input: /dev/video0: select timed out
+23:54:49.167: v4l2-input: /dev/video0: failed to log status
+23:54:49.703: v4l2-input: /dev/video0: select timed out
+23:54:49.704: v4l2-input: /dev/video0: failed to log status
+23:54:50.776: v4l2-input: /dev/video0: select timed out
+23:54:50.776: v4l2-input: /dev/video0: failed to log status
+23:54:50.970: v4l2-input: /dev/video0: select timed out
+23:54:50.970: v4l2-input: /dev/video0: failed to log status
+23:55:17.838: ---------------------------------
+23:55:17.838: [x264 encoder: 'simple_video_recording'] preset: veryfast
+23:55:17.838: [x264 encoder: 'simple_video_recording'] profile: high
+23:55:17.838: [x264 encoder: 'simple_video_recording'] settings:
+23:55:17.838: 	rate_control: CRF
+23:55:17.838: 	bitrate:      0
+23:55:17.838: 	buffer size:  0
+23:55:17.838: 	crf:          18
+23:55:17.838: 	fps_num:      30
+23:55:17.838: 	fps_den:      1
+23:55:17.838: 	width:        852
+23:55:17.838: 	height:       480
+23:55:17.838: 	keyint:       250
+23:55:17.838: 
+23:55:17.841: libfdk_aac encoder created
+23:55:17.841: libfdk_aac bitrate: 192, channels: 2
+23:55:17.844: ==== Recording Start ===============================================
+23:55:17.844: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 23-55-17.mkv'...
+23:55:22.263: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 23-55-17.mkv' stopped
+23:55:22.263: Output 'simple_file_output': stopping
+23:55:22.263: Output 'simple_file_output': Total frames output: 112
+23:55:22.263: Output 'simple_file_output': Total drawn frames: 133
+23:55:22.263: ==== Recording Stop ================================================
+23:55:22.266: libfdk_aac encoder destroyed
+23:56:14.527: ---------------------------------
+23:56:14.527: [x264 encoder: 'simple_video_recording'] preset: veryfast
+23:56:14.527: [x264 encoder: 'simple_video_recording'] profile: high
+23:56:14.527: [x264 encoder: 'simple_video_recording'] settings:
+23:56:14.527: 	rate_control: CRF
+23:56:14.527: 	bitrate:      0
+23:56:14.527: 	buffer size:  0
+23:56:14.527: 	crf:          18
+23:56:14.527: 	fps_num:      30
+23:56:14.527: 	fps_den:      1
+23:56:14.527: 	width:        852
+23:56:14.527: 	height:       480
+23:56:14.527: 	keyint:       250
+23:56:14.527: 
+23:56:14.530: libfdk_aac encoder created
+23:56:14.530: libfdk_aac bitrate: 192, channels: 2
+23:56:14.533: ==== Recording Start ===============================================
+23:56:14.533: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 23-56-14.mkv'...
+23:56:18.739: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 23-56-14.mkv' stopped
+23:56:18.739: Output 'simple_file_output': stopping
+23:56:18.739: Output 'simple_file_output': Total frames output: 106
+23:56:18.739: Output 'simple_file_output': Total drawn frames: 126
+23:56:18.739: ==== Recording Stop ================================================
+23:56:18.744: libfdk_aac encoder destroyed
+23:56:40.245: ---------------------------------
+23:56:40.245: [x264 encoder: 'simple_video_recording'] preset: veryfast
+23:56:40.245: [x264 encoder: 'simple_video_recording'] profile: high
+23:56:40.245: [x264 encoder: 'simple_video_recording'] settings:
+23:56:40.245: 	rate_control: CRF
+23:56:40.245: 	bitrate:      0
+23:56:40.245: 	buffer size:  0
+23:56:40.245: 	crf:          18
+23:56:40.245: 	fps_num:      30
+23:56:40.245: 	fps_den:      1
+23:56:40.245: 	width:        852
+23:56:40.245: 	height:       480
+23:56:40.245: 	keyint:       250
+23:56:40.245: 
+23:56:40.247: libfdk_aac encoder created
+23:56:40.247: libfdk_aac bitrate: 192, channels: 2
+23:56:40.250: ==== Recording Start ===============================================
+23:56:40.250: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 23-56-40.mkv'...
+23:56:45.214: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 23-56-40.mkv' stopped
+23:56:45.214: Output 'simple_file_output': stopping
+23:56:45.214: Output 'simple_file_output': Total frames output: 129
+23:56:45.214: Output 'simple_file_output': Total drawn frames: 149
+23:56:45.214: ==== Recording Stop ================================================
+23:56:45.216: libfdk_aac encoder destroyed
+23:58:16.137: ---------------------------------
+23:58:16.137: [x264 encoder: 'simple_video_recording'] preset: veryfast
+23:58:16.137: [x264 encoder: 'simple_video_recording'] profile: high
+23:58:16.137: [x264 encoder: 'simple_video_recording'] settings:
+23:58:16.137: 	rate_control: CRF
+23:58:16.137: 	bitrate:      0
+23:58:16.137: 	buffer size:  0
+23:58:16.137: 	crf:          18
+23:58:16.137: 	fps_num:      30
+23:58:16.137: 	fps_den:      1
+23:58:16.137: 	width:        852
+23:58:16.137: 	height:       480
+23:58:16.137: 	keyint:       250
+23:58:16.137: 
+23:58:16.139: libfdk_aac encoder created
+23:58:16.139: libfdk_aac bitrate: 192, channels: 2
+23:58:16.141: ==== Recording Start ===============================================
+23:58:16.141: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 23-58-16.mkv'...
+23:58:20.446: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 23-58-16.mkv' stopped
+23:58:20.446: Output 'simple_file_output': stopping
+23:58:20.446: Output 'simple_file_output': Total frames output: 109
+23:58:20.446: Output 'simple_file_output': Total drawn frames: 129
+23:58:20.447: ==== Recording Stop ================================================
+23:58:20.450: libfdk_aac encoder destroyed
+23:59:18.940: ---------------------------------
+23:59:18.940: [x264 encoder: 'simple_video_recording'] preset: veryfast
+23:59:18.940: [x264 encoder: 'simple_video_recording'] profile: high
+23:59:18.940: [x264 encoder: 'simple_video_recording'] settings:
+23:59:18.940: 	rate_control: CRF
+23:59:18.940: 	bitrate:      0
+23:59:18.940: 	buffer size:  0
+23:59:18.940: 	crf:          18
+23:59:18.940: 	fps_num:      30
+23:59:18.940: 	fps_den:      1
+23:59:18.940: 	width:        852
+23:59:18.940: 	height:       480
+23:59:18.940: 	keyint:       250
+23:59:18.940: 
+23:59:18.942: libfdk_aac encoder created
+23:59:18.942: libfdk_aac bitrate: 192, channels: 2
+23:59:18.945: ==== Recording Start ===============================================
+23:59:18.945: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-10 23-59-18.mkv'...
+23:59:24.680: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-10 23-59-18.mkv' stopped
+23:59:24.680: Output 'simple_file_output': stopping
+23:59:24.680: Output 'simple_file_output': Total frames output: 152
+23:59:24.680: Output 'simple_file_output': Total drawn frames: 172
+23:59:24.681: ==== Recording Stop ================================================
+23:59:24.686: libfdk_aac encoder destroyed
+23:59:51.683: v4l2-input: /dev/video0: select timed out
+23:59:51.683: v4l2-input: /dev/video0: failed to log status
+23:59:51.850: v4l2-input: /dev/video0: select timed out
+23:59:51.850: v4l2-input: /dev/video0: failed to log status
+23:59:52.019: v4l2-input: /dev/video0: select timed out
+23:59:52.020: v4l2-input: /dev/video0: failed to log status
+23:59:53.415: v4l2-input: /dev/video0: select timed out
+23:59:53.415: v4l2-input: /dev/video0: failed to log status
+23:59:54.079: v4l2-input: /dev/video0: select timed out
+23:59:54.079: v4l2-input: /dev/video0: failed to log status
+23:59:54.881: v4l2-input: /dev/video0: select timed out
+23:59:54.881: v4l2-input: /dev/video0: failed to log status
+23:59:55.947: v4l2-input: /dev/video0: select timed out
+23:59:55.948: v4l2-input: /dev/video0: failed to log status
+23:59:57.211: v4l2-input: /dev/video0: select timed out
+23:59:57.211: v4l2-input: /dev/video0: failed to log status
+23:59:57.410: v4l2-input: /dev/video0: select timed out
+23:59:57.410: v4l2-input: /dev/video0: failed to log status
+23:59:57.577: v4l2-input: /dev/video0: select timed out
+23:59:57.577: v4l2-input: /dev/video0: failed to log status
+00:00:01.010: v4l2-input: /dev/video0: select timed out
+00:00:01.010: v4l2-input: /dev/video0: failed to log status
+00:00:01.342: v4l2-input: /dev/video0: select timed out
+00:00:01.342: v4l2-input: /dev/video0: failed to log status
+00:00:02.340: v4l2-input: /dev/video0: select timed out
+00:00:02.340: v4l2-input: /dev/video0: failed to log status
+00:00:02.816: v4l2-input: /dev/video0: select timed out
+00:00:02.816: v4l2-input: /dev/video0: failed to log status
+00:00:03.205: v4l2-input: /dev/video0: select timed out
+00:00:03.205: v4l2-input: /dev/video0: failed to log status
+00:00:03.372: v4l2-input: /dev/video0: select timed out
+00:00:03.372: v4l2-input: /dev/video0: failed to log status
+00:00:03.539: v4l2-input: /dev/video0: select timed out
+00:00:03.539: v4l2-input: /dev/video0: failed to log status
+00:00:03.715: v4l2-input: /dev/video0: select timed out
+00:00:03.715: v4l2-input: /dev/video0: failed to log status
+00:00:04.006: v4l2-input: /dev/video0: select timed out
+00:00:04.006: v4l2-input: /dev/video0: failed to log status
+00:00:06.207: v4l2-input: /dev/video0: select timed out
+00:00:06.207: v4l2-input: /dev/video0: failed to log status
+00:00:06.737: v4l2-input: /dev/video0: select timed out
+00:00:06.737: v4l2-input: /dev/video0: failed to log status
+00:00:06.904: v4l2-input: /dev/video0: select timed out
+00:00:06.904: v4l2-input: /dev/video0: failed to log status
+00:00:09.133: v4l2-input: /dev/video0: select timed out
+00:00:09.133: v4l2-input: /dev/video0: failed to log status
+00:00:10.199: v4l2-input: /dev/video0: select timed out
+00:00:10.199: v4l2-input: /dev/video0: failed to log status
+00:00:30.912: v4l2-input: /dev/video0: select timed out
+00:00:30.912: v4l2-input: /dev/video0: failed to log status
+00:00:31.782: v4l2-input: /dev/video0: select timed out
+00:00:31.782: v4l2-input: /dev/video0: failed to log status
+00:01:20.798: v4l2-input: /dev/video0: select timed out
+00:01:20.798: v4l2-input: /dev/video0: failed to log status
+00:01:54.234: v4l2-input: /dev/video0: select timed out
+00:01:54.234: v4l2-input: /dev/video0: failed to log status
+00:02:24.338: v4l2-input: /dev/video0: select timed out
+00:02:24.338: v4l2-input: /dev/video0: failed to log status
+00:04:04.112: v4l2-input: /dev/video0: select timed out
+00:04:04.112: v4l2-input: /dev/video0: failed to log status
+00:04:29.355: v4l2-input: /dev/video0: select timed out
+00:04:29.355: v4l2-input: /dev/video0: failed to log status
+00:06:49.556: v4l2-input: /dev/video0: select timed out
+00:06:49.556: v4l2-input: /dev/video0: failed to log status
+00:07:55.161: v4l2-input: /dev/video0: select timed out
+00:07:55.162: v4l2-input: /dev/video0: failed to log status
+00:09:55.915: ---------------------------------
+00:09:55.915: [x264 encoder: 'simple_video_recording'] preset: veryfast
+00:09:55.915: [x264 encoder: 'simple_video_recording'] profile: high
+00:09:55.915: [x264 encoder: 'simple_video_recording'] settings:
+00:09:55.915: 	rate_control: CRF
+00:09:55.915: 	bitrate:      0
+00:09:55.915: 	buffer size:  0
+00:09:55.915: 	crf:          18
+00:09:55.915: 	fps_num:      30
+00:09:55.915: 	fps_den:      1
+00:09:55.915: 	width:        852
+00:09:55.915: 	height:       480
+00:09:55.915: 	keyint:       250
+00:09:55.915: 
+00:09:55.918: libfdk_aac encoder created
+00:09:55.918: libfdk_aac bitrate: 192, channels: 2
+00:09:55.924: ==== Recording Start ===============================================
+00:09:55.924: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-11 00-09-55.mkv'...
+00:10:07.161: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-11 00-09-55.mkv' stopped
+00:10:07.161: Output 'simple_file_output': stopping
+00:10:07.161: Output 'simple_file_output': Total frames output: 316
+00:10:07.161: Output 'simple_file_output': Total drawn frames: 337
+00:10:07.161: ==== Recording Stop ================================================
+00:10:07.166: libfdk_aac encoder destroyed
+00:10:10.078: Switched to Preview/Program mode
+00:10:10.078: ------------------------------------------------
+00:10:15.752: Switched to scene 'Cena'
+00:10:15.756: Switched to regular Preview mode
+00:10:15.756: ------------------------------------------------
+00:10:51.015: ---------------------------------
+00:10:51.015: [x264 encoder: 'simple_video_recording'] preset: veryfast
+00:10:51.015: [x264 encoder: 'simple_video_recording'] profile: high
+00:10:51.015: [x264 encoder: 'simple_video_recording'] settings:
+00:10:51.015: 	rate_control: CRF
+00:10:51.015: 	bitrate:      0
+00:10:51.015: 	buffer size:  0
+00:10:51.015: 	crf:          18
+00:10:51.015: 	fps_num:      30
+00:10:51.015: 	fps_den:      1
+00:10:51.015: 	width:        852
+00:10:51.015: 	height:       480
+00:10:51.015: 	keyint:       250
+00:10:51.015: 
+00:10:51.017: libfdk_aac encoder created
+00:10:51.017: libfdk_aac bitrate: 192, channels: 2
+00:10:51.022: ==== Recording Start ===============================================
+00:10:51.023: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-11 00-10-51.mkv'...
+00:11:01.084: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-11 00-10-51.mkv' stopped
+00:11:01.084: Output 'simple_file_output': stopping
+00:11:01.084: Output 'simple_file_output': Total frames output: 281
+00:11:01.084: Output 'simple_file_output': Total drawn frames: 301
+00:11:01.084: ==== Recording Stop ================================================
+00:11:01.090: libfdk_aac encoder destroyed
+00:11:02.300: ---------------------------------
+00:11:02.300: [x264 encoder: 'simple_video_recording'] preset: veryfast
+00:11:02.300: [x264 encoder: 'simple_video_recording'] profile: high
+00:11:02.300: [x264 encoder: 'simple_video_recording'] settings:
+00:11:02.300: 	rate_control: CRF
+00:11:02.300: 	bitrate:      0
+00:11:02.300: 	buffer size:  0
+00:11:02.300: 	crf:          18
+00:11:02.300: 	fps_num:      30
+00:11:02.300: 	fps_den:      1
+00:11:02.300: 	width:        852
+00:11:02.300: 	height:       480
+00:11:02.300: 	keyint:       250
+00:11:02.300: 
+00:11:02.302: libfdk_aac encoder created
+00:11:02.302: libfdk_aac bitrate: 192, channels: 2
+00:11:02.307: ==== Recording Start ===============================================
+00:11:02.307: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-11 00-11-02.mkv'...
+00:11:08.247: v4l2-input: /dev/video0: select timed out
+00:11:08.247: v4l2-input: /dev/video0: failed to log status
+00:11:08.960: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-11 00-11-02.mkv' stopped
+00:11:08.960: Output 'simple_file_output': stopping
+00:11:08.960: Output 'simple_file_output': Total frames output: 179
+00:11:08.960: Output 'simple_file_output': Total drawn frames: 200
+00:11:08.961: ==== Recording Stop ================================================
+00:11:08.963: libfdk_aac encoder destroyed
+00:11:10.401: ---------------------------------
+00:11:10.401: [x264 encoder: 'simple_video_recording'] preset: veryfast
+00:11:10.401: [x264 encoder: 'simple_video_recording'] profile: high
+00:11:10.401: [x264 encoder: 'simple_video_recording'] settings:
+00:11:10.401: 	rate_control: CRF
+00:11:10.401: 	bitrate:      0
+00:11:10.401: 	buffer size:  0
+00:11:10.401: 	crf:          18
+00:11:10.401: 	fps_num:      30
+00:11:10.401: 	fps_den:      1
+00:11:10.401: 	width:        852
+00:11:10.401: 	height:       480
+00:11:10.401: 	keyint:       250
+00:11:10.401: 
+00:11:10.403: libfdk_aac encoder created
+00:11:10.403: libfdk_aac bitrate: 192, channels: 2
+00:11:10.408: ==== Recording Start ===============================================
+00:11:10.408: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-11 00-11-10.mkv'...
+00:12:24.583: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-11 00-11-10.mkv' stopped
+00:12:24.583: Output 'simple_file_output': stopping
+00:12:24.583: Output 'simple_file_output': Total frames output: 2205
+00:12:24.583: Output 'simple_file_output': Total drawn frames: 2225
+00:12:24.583: ==== Recording Stop ================================================
+00:12:24.591: libfdk_aac encoder destroyed
+00:13:38.922: ---------------------------------
+00:13:38.922: [x264 encoder: 'simple_video_recording'] preset: veryfast
+00:13:38.922: [x264 encoder: 'simple_video_recording'] profile: high
+00:13:38.922: [x264 encoder: 'simple_video_recording'] settings:
+00:13:38.922: 	rate_control: CRF
+00:13:38.922: 	bitrate:      0
+00:13:38.922: 	buffer size:  0
+00:13:38.922: 	crf:          18
+00:13:38.922: 	fps_num:      30
+00:13:38.922: 	fps_den:      1
+00:13:38.922: 	width:        852
+00:13:38.922: 	height:       480
+00:13:38.922: 	keyint:       250
+00:13:38.922: 
+00:13:38.924: libfdk_aac encoder created
+00:13:38.924: libfdk_aac bitrate: 192, channels: 2
+00:13:38.930: ==== Recording Start ===============================================
+00:13:38.930: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/schuler/2025-02-11 00-13-38.mkv'...
+00:16:35.139: v4l2-input: /dev/video0: select timed out
+00:16:35.139: v4l2-input: /dev/video0: failed to log status
+00:17:25.159: v4l2-input: /dev/video0: select timed out
+00:17:25.159: v4l2-input: /dev/video0: failed to log status
+00:19:35.302: v4l2-input: /dev/video0: select timed out
+00:19:35.302: v4l2-input: /dev/video0: failed to log status
+00:21:23.933: v4l2-input: /dev/video0: select timed out
+00:21:23.933: v4l2-input: /dev/video0: failed to log status
+00:21:40.384: v4l2-input: /dev/video0: select timed out
+00:21:40.384: v4l2-input: /dev/video0: failed to log status
+00:24:50.606: v4l2-input: /dev/video0: select timed out
+00:24:50.606: v4l2-input: /dev/video0: failed to log status
+00:25:17.047: v4l2-input: /dev/video0: select timed out
+00:25:17.047: v4l2-input: /dev/video0: failed to log status
+00:26:31.244: v4l2-input: /dev/video0: select timed out
+00:26:31.244: v4l2-input: /dev/video0: failed to log status
+00:26:32.243: v4l2-input: /dev/video0: select timed out
+00:26:32.243: v4l2-input: /dev/video0: failed to log status
+00:27:10.341: v4l2-input: /dev/video0: select timed out
+00:27:10.341: v4l2-input: /dev/video0: failed to log status
+00:27:35.251: v4l2-input: /dev/video0: select timed out
+00:27:35.251: v4l2-input: /dev/video0: failed to log status
+00:30:00.914: v4l2-input: /dev/video0: select timed out
+00:30:00.914: v4l2-input: /dev/video0: failed to log status
+00:31:05.920: v4l2-input: /dev/video0: select timed out
+00:31:05.920: v4l2-input: /dev/video0: failed to log status
+00:32:21.050: v4l2-input: /dev/video0: select timed out
+00:32:21.050: v4l2-input: /dev/video0: failed to log status
+00:33:12.201: v4l2-input: /dev/video0: select timed out
+00:33:12.201: v4l2-input: /dev/video0: failed to log status
+00:33:51.164: v4l2-input: /dev/video0: select timed out
+00:33:51.164: v4l2-input: /dev/video0: failed to log status
+00:34:08.681: v4l2-input: /dev/video0: select timed out
+00:34:08.681: v4l2-input: /dev/video0: failed to log status
+00:34:11.878: v4l2-input: /dev/video0: select timed out
+00:34:11.878: v4l2-input: /dev/video0: failed to log status
+00:35:37.132: v4l2-input: /dev/video0: select timed out
+00:35:37.132: v4l2-input: /dev/video0: failed to log status
+00:37:05.049: v4l2-input: /dev/video0: select timed out
+00:37:05.049: v4l2-input: /dev/video0: failed to log status
+00:37:09.845: v4l2-input: /dev/video0: select timed out
+00:37:09.845: v4l2-input: /dev/video0: failed to log status
+00:37:23.032: v4l2-input: /dev/video0: select timed out
+00:37:23.032: v4l2-input: /dev/video0: failed to log status
+00:38:11.387: v4l2-input: /dev/video0: select timed out
+00:38:11.387: v4l2-input: /dev/video0: failed to log status
+00:39:11.464: v4l2-input: /dev/video0: select timed out
+00:39:11.464: v4l2-input: /dev/video0: failed to log status
+00:39:26.983: v4l2-input: /dev/video0: select timed out
+00:39:26.983: v4l2-input: /dev/video0: failed to log status
+00:40:03.016: v4l2-input: /dev/video0: select timed out
+00:40:03.016: v4l2-input: /dev/video0: failed to log status
+00:40:06.678: v4l2-input: /dev/video0: select timed out
+00:40:06.679: v4l2-input: /dev/video0: failed to log status
+00:40:38.515: v4l2-input: /dev/video0: select timed out
+00:40:38.515: v4l2-input: /dev/video0: failed to log status
+00:40:42.711: v4l2-input: /dev/video0: select timed out
+00:40:42.712: v4l2-input: /dev/video0: failed to log status
+00:41:28.802: v4l2-input: /dev/video0: select timed out
+00:41:28.802: v4l2-input: /dev/video0: failed to log status
+00:42:16.057: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/schuler/2025-02-11 00-13-38.mkv' stopped
+00:42:16.057: Output 'simple_file_output': stopping
+00:42:16.057: Output 'simple_file_output': Total frames output: 51493
+00:42:16.057: Output 'simple_file_output': Total drawn frames: 51514
+00:42:16.057: ==== Recording Stop ================================================
+00:42:16.060: libfdk_aac encoder destroyed
+00:42:40.811: ==== Shutting down ==================================================
+00:42:40.817: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+00:42:40.817: pulse-input: Got 302659 packets with 363190800 frames
+00:42:40.817: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+00:42:40.817: pulse-input: Got 302638 packets with 363165600 frames
+00:42:40.817: [pipewire] Stream 0x5eb69efa8430 state: "paused" (error: none)
+00:42:40.818: [pipewire] Stream 0x5eb69efa8430 state: "unconnected" (error: none)
+00:42:40.827: pulse-input: Stopped recording from 'alsa_input.usb-3142_Fifine_Microphone-00.mono-fallback'
+00:42:40.827: pulse-input: Got 302656 packets with 363187200 frames
+00:42:40.900: v4l2-input: /dev/video0: Stopped capture after 103649 frames
+00:42:40.907: All scene data cleared
+00:42:40.907: ------------------------------------------------
+00:42:40.979: [Scripting] Total detached callbacks: 0
+00:42:40.979: Freeing OBS context data
+00:42:41.017: == Profiler Results =============================
+00:42:41.017: run_program_init: 1643.81 ms
+00:42:41.017:  ┣OBSApp::AppInit: 27.156 ms
+00:42:41.017:  ┃ ┗OBSApp::InitLocale: 7.261 ms
+00:42:41.017:  ┗OBSApp::OBSInit: 1550 ms
+00:42:41.017:    ┣obs_startup: 3.056 ms
+00:42:41.017:    ┗OBSBasic::OBSInit: 1459.33 ms
+00:42:41.017:      ┣OBSBasic::InitBasicConfig: 0.802 ms
+00:42:41.017:      ┣OBSBasic::ResetAudio: 0.345 ms
+00:42:41.017:      ┣OBSBasic::ResetVideo: 283.835 ms
+00:42:41.017:      ┃ ┗obs_init_graphics: 277.389 ms
+00:42:41.017:      ┃   ┗shader compilation: 200.936 ms
+00:42:41.017:      ┣OBSBasic::InitOBSCallbacks: 0.005 ms
+00:42:41.017:      ┣OBSBasic::InitHotkeys: 0.034 ms
+00:42:41.017:      ┣obs_load_all_modules2: 1033.77 ms
+00:42:41.017:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+00:42:41.017:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+00:42:41.017:      ┃ ┣obs_init_module(decklink.so): 0.148 ms
+00:42:41.017:      ┃ ┣obs_init_module(frontend-tools.so): 102.813 ms
+00:42:41.017:      ┃ ┣obs_init_module(image-source.so): 0.013 ms
+00:42:41.017:      ┃ ┣obs_init_module(linux-alsa.so): 0.004 ms
+00:42:41.017:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+00:42:41.017:      ┃ ┣obs_init_module(linux-jack.so): 0.006 ms
+00:42:41.017:      ┃ ┣obs_init_module(linux-pipewire.so): 22.967 ms
+00:42:41.017:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.006 ms
+00:42:41.017:      ┃ ┣obs_init_module(linux-v4l2.so): 4.019 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-ffmpeg.so): 427.929 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-filters.so): 0.036 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-libfdk.so): 0.002 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-nvenc.so): 0.159 ms
+00:42:41.017:      ┃ ┃ ┗nvenc_check: 0.139 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-outputs.so): 0.006 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-qsv11.so): 22.417 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-transitions.so): 0.01 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-vst.so): 0.006 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-webrtc.so): 0.008 ms
+00:42:41.017:      ┃ ┣obs_init_module(obs-x264.so): 0.002 ms
+00:42:41.017:      ┃ ┣obs_init_module(rtmp-services.so): 2.073 ms
+00:42:41.017:      ┃ ┗obs_init_module(text-freetype2.so): 0.021 ms
+00:42:41.017:      ┣OBSBasic::InitService: 4.216 ms
+00:42:41.017:      ┣OBSBasic::ResetOutputs: 0.276 ms
+00:42:41.017:      ┣OBSBasic::CreateHotkeys: 0.024 ms
+00:42:41.017:      ┣OBSBasic::InitPrimitives: 0.11 ms
+00:42:41.017:      ┗OBSBasic::Load: 79.561 ms
+00:42:41.017: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.949 ms, 99th percentile=0.002 ms, 100% below 25 ms
+00:42:41.017: audio_thread(Audio): min=0.007 ms, median=0.112 ms, max=73.498 ms, 99th percentile=1.317 ms
+00:42:41.017:  ┗receive_audio: min=0.001 ms, median=0.339 ms, max=19.598 ms, 99th percentile=0.94 ms, 0.250136 calls per parent call
+00:42:41.017:    ┣buffer_audio: min=0.001 ms, median=0.001 ms, max=1.296 ms, 99th percentile=0.007 ms
+00:42:41.017:    ┗do_encode: min=0.074 ms, median=0.336 ms, max=19.58 ms, 99th percentile=0.926 ms
+00:42:41.017:      ┣encode(simple_aac_recording0): min=0.072 ms, median=0.327 ms, max=19.049 ms, 99th percentile=0.874 ms
+00:42:41.017:      ┗send_packet: min=0.001 ms, median=0.005 ms, max=14.219 ms, 99th percentile=0.055 ms
+00:42:41.017: obs_graphics_thread(33.3333 ms): min=0.064 ms, median=1.509 ms, max=230.553 ms, 99th percentile=4.348 ms, 99.993% below 33.333 ms
+00:42:41.017:  ┣tick_sources: min=0 ms, median=0.009 ms, max=66.062 ms, 99th percentile=0.039 ms
+00:42:41.017:  ┣output_frame: min=0.044 ms, median=0.571 ms, max=53.631 ms, 99th percentile=2.125 ms
+00:42:41.017:  ┃ ┣gs_context(video->graphics): min=0.044 ms, median=0.468 ms, max=53.627 ms, 99th percentile=1.957 ms
+00:42:41.017:  ┃ ┃ ┣render_video: min=0.007 ms, median=0.225 ms, max=53.198 ms, 99th percentile=1.603 ms
+00:42:41.017:  ┃ ┃ ┃ ┣render_main_texture: min=0.005 ms, median=0.201 ms, max=47.311 ms, 99th percentile=1.534 ms
+00:42:41.017:  ┃ ┃ ┃ ┣render_output_texture: min=0.01 ms, median=0.014 ms, max=18.742 ms, 99th percentile=0.071 ms, 0.250146 calls per parent call
+00:42:41.017:  ┃ ┃ ┃ ┣render_convert_texture: min=0.016 ms, median=0.021 ms, max=26.838 ms, 99th percentile=0.089 ms, 0.250146 calls per parent call
+00:42:41.017:  ┃ ┃ ┃ ┗stage_output_texture: min=0.01 ms, median=0.015 ms, max=7.532 ms, 99th percentile=0.064 ms, 0.250146 calls per parent call
+00:42:41.017:  ┃ ┃ ┣gs_flush: min=0.029 ms, median=0.113 ms, max=24.936 ms, 99th percentile=0.379 ms
+00:42:41.017:  ┃ ┃ ┗download_frame: min=0 ms, median=0.067 ms, max=5.422 ms, 99th percentile=0.255 ms, 0.250146 calls per parent call
+00:42:41.017:  ┃ ┗output_video_data: min=0.052 ms, median=0.095 ms, max=6.87 ms, 99th percentile=0.452 ms, 0.250063 calls per parent call
+00:42:41.017:  ┗render_displays: min=0.005 ms, median=0.823 ms, max=230.292 ms, 99th percentile=2.899 ms
+00:42:41.017: video_thread(video): min=0.288 ms, median=0.955 ms, max=25.493 ms, 99th percentile=2.901 ms
+00:42:41.017:  ┗receive_video: min=0.287 ms, median=0.952 ms, max=25.489 ms, 99th percentile=2.88 ms
+00:42:41.017:    ┗do_encode: min=0.286 ms, median=0.951 ms, max=25.486 ms, 99th percentile=2.87 ms
+00:42:41.017:      ┣encode(simple_video_recording): min=0.279 ms, median=0.922 ms, max=11.91 ms, 99th percentile=2.82 ms
+00:42:41.017:      ┗send_packet: min=0.002 ms, median=0.015 ms, max=23.803 ms, 99th percentile=0.115 ms
+00:42:41.017: =================================================
+00:42:41.017: == Profiler Time Between Calls ==================
+00:42:41.018: obs_hotkey_thread(25 ms): min=25.013 ms, median=25.095 ms, max=119.499 ms, 99.3642% within ±2% of 25 ms (0% lower, 0.635835% higher)
+00:42:41.018: obs_graphics_thread(33.3333 ms): min=2.721 ms, median=33.334 ms, max=230.643 ms, 99.5212% within ±2% of 33.333 ms (0.240505% lower, 0.238303% higher)
+00:42:41.018: =================================================
+00:42:41.086: Number of memory leaks: 0

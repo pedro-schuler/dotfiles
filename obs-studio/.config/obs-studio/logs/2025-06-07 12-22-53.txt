@@ -1,0 +1,291 @@
+12:22:53.286: Platform: Wayland
+12:22:53.286: CPU Name: Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz
+12:22:53.286: CPU Speed: 2997.191MHz
+12:22:53.286: Physical Cores: 2, Logical Cores: 4
+12:22:53.286: Physical Memory: 15879MB Total, 10511MB Free
+12:22:53.286: Kernel Version: Linux 6.14.10-arch1-1
+12:22:53.286: Distribution: "Arch Linux" Unknown
+12:22:53.286: Desktop Environment: Hyprland (Hyprland)
+12:22:53.286: Session Type: wayland
+12:22:53.289: Qt Version: 6.9.1 (runtime), 6.9.0 (compiled)
+12:22:53.289: Portable mode: false
+12:22:53.378: OBS 31.0.3 (linux)
+12:22:53.378: ---------------------------------
+12:22:53.382: ---------------------------------
+12:22:53.382: audio settings reset:
+12:22:53.382: 	samples per sec: 48000
+12:22:53.382: 	speakers:        2
+12:22:53.382: 	max buffering:   960 milliseconds
+12:22:53.382: 	buffering type:  dynamically increasing
+12:22:53.386: ---------------------------------
+12:22:53.386: Initializing OpenGL...
+12:22:53.386: Using EGL/Wayland
+12:22:53.445: Initialized EGL 1.5
+12:22:53.465: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 520 (SKL GT2)
+12:22:53.465: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.1.2-arch1.1, shading language 4.60
+12:22:53.514: ---------------------------------
+12:22:53.514: video settings reset:
+12:22:53.514: 	base resolution:   1920x1080
+12:22:53.514: 	output resolution: 852x480
+12:22:53.514: 	downscale filter:  Bicubic
+12:22:53.514: 	fps:               30/1
+12:22:53.514: 	format:            NV12
+12:22:53.514: 	YUV mode:          Rec. 709/Partial
+12:22:53.514: NV12 texture support enabled
+12:22:53.514: P010 texture support not available
+12:22:53.520: Audio monitoring device:
+12:22:53.520: 	name: Padrão
+12:22:53.520: 	id: default
+12:22:53.521: ---------------------------------
+12:22:53.531: Failed to load 'en-US' text for module: 'decklink-captions.so'
+12:22:53.541: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+12:22:53.551: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+12:22:53.551: Failed to initialize module 'decklink.so'
+12:22:53.748: [pipewire] Available capture sources:
+12:22:53.748: [pipewire]     - Monitor source
+12:22:53.748: [pipewire]     - Window source
+12:22:53.778: v4l2loopback not installed, virtual camera not registered
+12:22:53.935: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+12:22:54.063: VAAPI: API version 1.22
+12:22:54.080: FFmpeg VAAPI H264 encoding supported
+12:22:54.129: FFmpeg VAAPI AV1 encoding supported
+12:22:54.176: FFmpeg VAAPI HEVC encoding supported
+12:22:54.588: [NVENC] Test process failed: no_supported_devices
+12:22:54.588: NVENC not supported
+12:22:54.588: Failed to initialize module 'obs-nvenc.so'
+12:22:54.808: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+12:22:54.808: 
+12:22:54.811: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+12:22:54.811: 
+12:22:54.811: Module '/usr/lib/obs-plugins/obs-websocket.so' not loaded
+12:22:54.848: ---------------------------------
+12:22:54.848:   Loaded Modules:
+12:22:54.848:     text-freetype2.so
+12:22:54.848:     rtmp-services.so
+12:22:54.848:     obs-x264.so
+12:22:54.848:     obs-webrtc.so
+12:22:54.848:     obs-vst.so
+12:22:54.848:     obs-transitions.so
+12:22:54.848:     obs-qsv11.so
+12:22:54.848:     obs-outputs.so
+12:22:54.848:     obs-libfdk.so
+12:22:54.848:     obs-filters.so
+12:22:54.848:     obs-ffmpeg.so
+12:22:54.848:     linux-v4l2.so
+12:22:54.848:     linux-pulseaudio.so
+12:22:54.848:     linux-pipewire.so
+12:22:54.848:     linux-jack.so
+12:22:54.848:     linux-capture.so
+12:22:54.848:     linux-alsa.so
+12:22:54.848:     image-source.so
+12:22:54.848:     frontend-tools.so
+12:22:54.848:     decklink-output-ui.so
+12:22:54.848:     decklink-captions.so
+12:22:54.848: ---------------------------------
+12:22:54.848: ---------------------------------
+12:22:54.848: Available Encoders:
+12:22:54.848:   Video Encoders:
+12:22:54.848: 	- ffmpeg_svt_av1 (SVT-AV1)
+12:22:54.848: 	- ffmpeg_aom_av1 (AOM AV1)
+12:22:54.849: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+12:22:54.849: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+12:22:54.849: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+12:22:54.849: 	- obs_x264 (x264)
+12:22:54.849:   Audio Encoders:
+12:22:54.849: 	- ffmpeg_aac (FFmpeg AAC)
+12:22:54.849: 	- ffmpeg_opus (FFmpeg Opus)
+12:22:54.849: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+12:22:54.849: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+12:22:54.849: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+12:22:54.849: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+12:22:54.849: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+12:22:54.849: 	- libfdk_aac (libfdk AAC)
+12:22:54.849: ==== Startup complete ===============================================
+12:22:54.900: All scene data cleared
+12:22:54.900: ------------------------------------------------
+12:22:54.906: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.5) 15.0.0'
+12:22:54.906: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+12:22:54.907: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+12:22:54.907: [Loaded global audio device]: 'Áudio do desktop'
+12:22:54.908: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.5) 15.0.0'
+12:22:54.908: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+12:22:54.908: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+12:22:54.908: [Loaded global audio device]: 'Mic/Aux'
+12:22:54.909: PipeWire initialized
+12:22:54.909: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.5) 15.0.0'
+12:22:54.910: pulse-input: An error occurred while getting the source info!
+12:22:54.912: Switched to scene 'Cena'
+12:22:54.912: ------------------------------------------------
+12:22:54.912: Loaded scenes:
+12:22:54.912: - scene 'Cena':
+12:22:54.912:     - source: 'Captura de tela (PipeWire)' (pipewire-screen-capture-source)
+12:22:54.912:     - source: 'Dispositivo de Entrada de Áudio (PulseAudio)' (pulse_input_capture)
+12:22:54.912: ------------------------------------------------
+12:22:54.980: [pipewire] Screencast session created
+12:22:55.538: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Áudio do desktop)
+12:22:55.538: 
+12:22:56.803: [pipewire] Asking for monitor and window
+12:22:56.808: [pipewire] source selected, setting up screencast
+12:22:56.819: [pipewire] Server version: 1.4.5
+12:22:56.819: [pipewire] Library version: 1.4.5
+12:22:56.819: [pipewire] Header version: 1.4.2
+12:22:56.820: [pipewire] Created stream 0x55dec1449840
+12:22:56.820: [pipewire] Stream 0x55dec1449840 state: "connecting" (error: none)
+12:22:56.820: [pipewire] Playing stream 0x55dec1449840
+12:22:56.821: [pipewire] Stream 0x55dec1449840 state: "paused" (error: none)
+12:22:56.851: [pipewire] Negotiated format:
+12:22:56.852: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:22:56.852: [pipewire]     Modifier: 0x0
+12:22:56.852: [pipewire]     Size: 1920x1080
+12:22:56.852: [pipewire]     Framerate: 0/1
+12:22:56.855: [pipewire] Negotiated format:
+12:22:56.856: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:22:56.856: [pipewire]     Modifier: 0x100000000000004
+12:22:56.856: [pipewire]     Size: 1920x1080
+12:22:56.856: [pipewire]     Framerate: 0/1
+12:22:56.866: [pipewire] Stream 0x55dec1449840 state: "streaming" (error: none)
+12:22:56.887: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+12:22:56.887: [pipewire] Renegotiating stream
+12:22:56.887: [pipewire] Stream 0x55dec1449840 state: "paused" (error: none)
+12:22:56.887: [pipewire] Negotiated format:
+12:22:56.887: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:22:56.887: [pipewire]     Modifier: 0x100000000000004
+12:22:56.887: [pipewire]     Size: 1920x1080
+12:22:56.887: [pipewire]     Framerate: 0/1
+12:22:56.891: [pipewire] Negotiated format:
+12:22:56.891: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:22:56.891: [pipewire]     Modifier: 0x100000000000002
+12:22:56.891: [pipewire]     Size: 1920x1080
+12:22:56.891: [pipewire]     Framerate: 0/1
+12:22:56.903: [pipewire] Stream 0x55dec1449840 state: "streaming" (error: none)
+12:23:06.264: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55debfcb2b40 with focusing surface 0x55dec1998450
+12:23:08.913: v4l2-input: Start capture from 
+12:23:08.914: v4l2-input: Unable to open device
+12:23:08.914: v4l2-input: Initialization failed, errno: Arquivo ou diretório inexistente
+12:23:08.917: User added source 'Dispositivo de captura de vídeo (V4L2)' (v4l2_input) to scene 'Cena'
+12:23:08.942: v4l2-input: /dev/video3 seems to not support video capture
+12:23:08.942: v4l2-input: /dev/video1 seems to not support video capture
+12:23:09.018: v4l2-input: Found device 'Intel(R) RealSense(TM) 3D Camer' at /dev/video2
+12:23:09.019: v4l2-input: Found device 'Intel(R) RealSense(TM) 3D Camer' at /dev/video0
+12:23:09.024: v4l2-input: Found input 'Camera 5' (Index 0)
+12:23:09.026: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+12:23:09.026: v4l2-input: Pixelformat: 16-bit Depth (unavailable)
+12:23:09.026: v4l2-input: Pixelformat: Planar 10:16 Greyscale Depth (unavailable)
+12:23:09.026: v4l2-input: Pixelformat: 10-bit Greyscale (unavailable)
+12:23:09.026: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+12:23:09.026: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+12:23:09.026: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+12:23:09.026: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+12:23:09.026: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+12:23:09.027: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+12:23:09.029: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+12:23:09.030: v4l2-input: Pixelformat: 16-bit Depth (unavailable)
+12:23:09.030: v4l2-input: Pixelformat: Planar 10:16 Greyscale Depth (unavailable)
+12:23:09.030: v4l2-input: Pixelformat: 10-bit Greyscale (unavailable)
+12:23:09.030: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+12:23:09.030: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+12:23:09.030: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+12:23:09.030: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+12:23:09.030: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+12:23:09.031: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+12:23:09.036: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+12:23:09.053: v4l2-input: Start capture from /dev/video2
+12:23:09.055: v4l2-input: Input: 0
+12:23:09.055: v4l2-input: Resolution: 640x240
+12:23:09.056: v4l2-input: Pixelformat: YUYV
+12:23:09.056: v4l2-input: Linesize: 1280 Bytes
+12:23:09.056: v4l2-input: Framerate: 30.00 fps
+12:23:09.056: v4l2-input: /dev/video2: select timeout set to 166666 (5x frame periods)
+12:23:09.224: v4l2-input: /dev/video2: select timed out
+12:23:09.224: v4l2-input: /dev/video2: failed to log status
+12:23:09.391: v4l2-input: /dev/video2: select timed out
+12:23:09.391: v4l2-input: /dev/video2: failed to log status
+12:23:12.659: v4l2-input: Found input 'Camera 1' (Index 0)
+12:23:12.659: v4l2-controls: setting default for Power Line Frequency to 2
+12:23:12.659: v4l2-controls: setting default for Auto Exposure to 3
+12:23:12.660: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+12:23:12.660: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+12:23:12.660: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+12:23:12.660: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+12:23:12.660: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+12:23:12.661: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+12:23:12.698: v4l2-input: /dev/video2: Stopped capture after 99 frames
+12:23:12.701: v4l2-input: Start capture from /dev/video0
+12:23:12.702: v4l2-input: Input: 0
+12:23:12.703: v4l2-input: Resolution: 1920x1080
+12:23:12.703: v4l2-input: Pixelformat: YUYV
+12:23:12.703: v4l2-input: Linesize: 3840 Bytes
+12:23:12.703: v4l2-input: Framerate: 30.00 fps
+12:23:12.706: v4l2-input: /dev/video0: select timeout set to 166666 (5x frame periods)
+12:24:39.192: ==== Shutting down ==================================================
+12:24:39.210: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+12:24:39.210: pulse-input: Got 4168 packets with 5001600 frames
+12:24:39.210: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+12:24:39.210: pulse-input: Got 4166 packets with 4999200 frames
+12:24:39.210: [pipewire] Stream 0x55dec1449840 state: "paused" (error: none)
+12:24:39.211: [pipewire] Stream 0x55dec1449840 state: "unconnected" (error: none)
+12:24:39.248: v4l2-input: /dev/video0: Stopped capture after 2596 frames
+12:24:39.264: All scene data cleared
+12:24:39.264: ------------------------------------------------
+12:24:39.382: [Scripting] Total detached callbacks: 0
+12:24:39.382: Freeing OBS context data
+12:24:39.402: == Profiler Results =============================
+12:24:39.402: run_program_init: 1766.21 ms
+12:24:39.402:  ┣OBSApp::AppInit: 25.206 ms
+12:24:39.402:  ┃ ┗OBSApp::InitLocale: 6.113 ms
+12:24:39.402:  ┗OBSApp::OBSInit: 1677.49 ms
+12:24:39.402:    ┣obs_startup: 2.828 ms
+12:24:39.402:    ┗OBSBasic::OBSInit: 1585.14 ms
+12:24:39.402:      ┣OBSBasic::InitBasicConfig: 4.09 ms
+12:24:39.402:      ┣OBSBasic::ResetAudio: 0.341 ms
+12:24:39.402:      ┣OBSBasic::ResetVideo: 137.329 ms
+12:24:39.402:      ┃ ┗obs_init_graphics: 130.958 ms
+12:24:39.402:      ┃   ┗shader compilation: 47.95 ms
+12:24:39.402:      ┣OBSBasic::InitOBSCallbacks: 0.005 ms
+12:24:39.402:      ┣OBSBasic::InitHotkeys: 0.031 ms
+12:24:39.402:      ┣obs_load_all_modules2: 1326.73 ms
+12:24:39.402:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+12:24:39.402:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+12:24:39.402:      ┃ ┣obs_init_module(decklink.so): 0.199 ms
+12:24:39.402:      ┃ ┣obs_init_module(frontend-tools.so): 99.376 ms
+12:24:39.402:      ┃ ┣obs_init_module(image-source.so): 0.018 ms
+12:24:39.402:      ┃ ┣obs_init_module(linux-alsa.so): 0.003 ms
+12:24:39.402:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+12:24:39.402:      ┃ ┣obs_init_module(linux-jack.so): 0.003 ms
+12:24:39.402:      ┃ ┣obs_init_module(linux-pipewire.so): 18.591 ms
+12:24:39.402:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.009 ms
+12:24:39.402:      ┃ ┣obs_init_module(linux-v4l2.so): 4.099 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-ffmpeg.so): 259.1 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-filters.so): 0.044 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-libfdk.so): 0.002 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-nvenc.so): 355.494 ms
+12:24:39.402:      ┃ ┃ ┗nvenc_check: 355.471 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-outputs.so): 0.006 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-qsv11.so): 103.45 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-transitions.so): 0.013 ms
+12:24:39.402:      ┃ ┣obs_init_module(obs-vst.so): 0.005 ms
+12:24:39.403:      ┃ ┣obs_init_module(obs-webrtc.so): 0.008 ms
+12:24:39.403:      ┃ ┣obs_init_module(obs-x264.so): 0.011 ms
+12:24:39.403:      ┃ ┣obs_init_module(rtmp-services.so): 2.06 ms
+12:24:39.403:      ┃ ┗obs_init_module(text-freetype2.so): 0.025 ms
+12:24:39.403:      ┣OBSBasic::InitService: 2.805 ms
+12:24:39.403:      ┣OBSBasic::ResetOutputs: 0.264 ms
+12:24:39.403:      ┣OBSBasic::CreateHotkeys: 0.026 ms
+12:24:39.403:      ┣OBSBasic::InitPrimitives: 0.169 ms
+12:24:39.403:      ┗OBSBasic::Load: 68.616 ms
+12:24:39.403: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.111 ms, 99th percentile=0.003 ms, 100% below 25 ms
+12:24:39.403: audio_thread(Audio): min=0.009 ms, median=0.061 ms, max=4.22 ms, 99th percentile=1.461 ms
+12:24:39.403: obs_graphics_thread(33.3333 ms): min=0.104 ms, median=1.52 ms, max=77.952 ms, 99th percentile=8.497 ms, 99.937% below 33.333 ms
+12:24:39.403:  ┣tick_sources: min=0 ms, median=0.01 ms, max=43.027 ms, 99th percentile=0.18 ms
+12:24:39.403:  ┣output_frame: min=0.077 ms, median=0.887 ms, max=8.734 ms, 99th percentile=3.576 ms
+12:24:39.403:  ┃ ┗gs_context(video->graphics): min=0.077 ms, median=0.887 ms, max=8.732 ms, 99th percentile=3.574 ms
+12:24:39.403:  ┃   ┣render_video: min=0.004 ms, median=0.721 ms, max=7.475 ms, 99th percentile=2.955 ms
+12:24:39.403:  ┃   ┃ ┗render_main_texture: min=0.003 ms, median=0.717 ms, max=7.457 ms, 99th percentile=2.944 ms
+12:24:39.403:  ┃   ┗gs_flush: min=0.053 ms, median=0.135 ms, max=4.282 ms, 99th percentile=0.589 ms
+12:24:39.403:  ┗render_displays: min=0.006 ms, median=0.501 ms, max=24.39 ms, 99th percentile=4.207 ms
+12:24:39.403: =================================================
+12:24:39.403: == Profiler Time Between Calls ==================
+12:24:39.403: obs_hotkey_thread(25 ms): min=25.02 ms, median=25.091 ms, max=27.8 ms, 98.9105% within ±2% of 25 ms (0% lower, 1.08953% higher)
+12:24:39.403: obs_graphics_thread(33.3333 ms): min=20.948 ms, median=33.334 ms, max=77.957 ms, 99.3697% within ±2% of 33.333 ms (0.315159% lower, 0.315159% higher)
+12:24:39.403: =================================================
+12:24:39.416: Number of memory leaks: 0
