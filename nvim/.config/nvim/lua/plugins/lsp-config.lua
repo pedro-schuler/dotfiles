@@ -205,8 +205,19 @@ return {
         -- R!
         r_language_server = {},
         -- Org
-        textlsp = {
-          filetypes = { "text", "org" },
+        -- textlsp = {
+        -- 	filetypes = { "text", "org" },
+        -- },
+        ltex_plus = {
+          settings = {
+            ltex = {
+              language = { "pt-BR", "en" },
+              additionalRules = {
+                enablePickyRules = true,
+                motherTongue = "pt-BR",
+              },
+            },
+          },
         },
         -- Markdown
         marksman = {},
@@ -270,7 +281,7 @@ return {
               group = augroup,
               buffer = bufnr,
               callback = function()
-                vim.lsp.buf.format({ async = false, timeout_ms = 2000 })
+                vim.lsp.buf.format({ async = false, timeout_ms = 9000 })
               end,
             })
           end
