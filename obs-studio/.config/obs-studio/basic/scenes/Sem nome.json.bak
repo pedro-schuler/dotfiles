@@ -333,8 +333,8 @@
             "id": "pipewire_audio_input_capture",
             "versioned_id": "pipewire_audio_input_capture",
             "settings": {
-                "TargetId": 55,
-                "TargetName": "alsa_input.pci-0000_00_1f.3.analog-stereo"
+                "TargetName": "alsa_input.pci-0000_00_1f.3.analog-stereo",
+                "TargetId": 0
             },
             "mixers": 255,
             "sync": 0,
@@ -392,6 +392,9 @@
     "scaling_level": 0,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
+    "virtual-camera": {
+        "type2": 3
+    },
     "modules": {
         "scripts-tool": [],
         "output-timer": {
