@@ -77,7 +77,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 9,
+                "id_counter": 12,
                 "custom_size": false,
                 "items": [
                     {
@@ -136,8 +136,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Dispositivo de captura de vídeo (V4L2)",
-                        "source_uuid": "f2a0d1d3-8146-4269-ab9e-0fcb7dbf74b1",
+                        "name": "Captura de entrada de áudio (PulseAudio)",
+                        "source_uuid": "1a8070ab-76c4-4a05-b1d0-58faa7850288",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -153,23 +153,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 8,
+                        "id": 11,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1438.0,
-                            "y": 809.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "pos_rel": {
-                            "x": 0.885185182094574,
-                            "y": 0.49814820289611816
+                            "x": -1.7777777910232544,
+                            "y": -1.0
                         },
                         "scale": {
-                            "x": 0.2510416805744171,
-                            "y": 0.2509259283542633
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_rel": {
-                            "x": 0.2510416805744171,
-                            "y": 0.2509259283542633
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -191,8 +191,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Captura de Entrada de Áudio (PipeWire)",
-                        "source_uuid": "97e89990-17b9-4ecc-bdf6-dc52ac48fd5e",
+                        "name": "Dispositivo de captura de vídeo (V4L2)",
+                        "source_uuid": "c061a54e-3b32-4a2b-917a-17025852df61",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -208,7 +208,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 9,
+                        "id": 12,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -219,12 +219,12 @@
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.2604166567325592,
+                            "y": 0.260185182094574
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.2604166567325592,
+                            "y": 0.260185182094574
                         },
                         "bounds": {
                             "x": 0.0,
@@ -262,10 +262,10 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
-                "libobs.show_scene_item.8": [],
-                "libobs.hide_scene_item.8": [],
-                "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": []
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -300,8 +300,39 @@
         },
         {
             "prev_ver": 520093699,
+            "name": "Captura de entrada de áudio (PulseAudio)",
+            "uuid": "1a8070ab-76c4-4a05-b1d0-58faa7850288",
+            "id": "pulse_input_capture",
+            "versioned_id": "pulse_input_capture",
+            "settings": {
+                "device_id": "alsa_input.usb-3142_Fifine_Microphone-00.mono-fallback"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520093699,
             "name": "Dispositivo de captura de vídeo (V4L2)",
-            "uuid": "f2a0d1d3-8146-4269-ab9e-0fcb7dbf74b1",
+            "uuid": "c061a54e-3b32-4a2b-917a-17025852df61",
             "id": "v4l2_input",
             "versioned_id": "v4l2_input",
             "settings": {
@@ -321,38 +352,6 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093699,
-            "name": "Captura de Entrada de Áudio (PipeWire)",
-            "uuid": "97e89990-17b9-4ecc-bdf6-dc52ac48fd5e",
-            "id": "pipewire_audio_input_capture",
-            "versioned_id": "pipewire_audio_input_capture",
-            "settings": {
-                "TargetName": "alsa_input.pci-0000_00_1f.3.analog-stereo",
-                "TargetId": 0
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": []
-            },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
