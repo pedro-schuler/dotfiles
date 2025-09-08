@@ -23,24 +23,53 @@ return {
 	{ "github/copilot.vim" },
 	{
 		"olimorris/codecompanion.nvim",
-		config = true,
+		cmd = { "CodeCompanion", "CodeCompanionChat", "CodeCompanionActions" },
 		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-treesitter/nvim-treesitter",
+			"j-hui/fidget.nvim", -- Display status
+			-- { "echasnovski/mini.pick", config = true },
+			-- { "ibhagwan/fzf-lua", config = true },
 		},
 		opts = {
-			adapters = {
-				copilot = function()
-					return require("codecompanion.adapters").extend("copilot", {
-						schema = {
-							model = {
-								default = "claude-3.7-sonnet",
-							},
-						},
-					})
-				end,
+			---@module "codecompanion"
+			---@type CodeCompanion.Config
+			adapters = {},
+			prompt_library = {},
+			strategies = {
+				chat = {
+					adapter = {
+						name = "copilot",
+						model = "gemini-2.5-pro",
+					},
+					roles = {
+						user = "pedro-malta-schuler",
+					},
+				},
+				inline = {
+					adapter = {
+						name = "copilot",
+						model = "gemini-2.5-pro",
+					},
+				},
 			},
+			display = {
+				action_palette = {
+					provider = "default",
+				},
+				chat = {
+					-- show_references = true,
+					-- show_header_separator = false,
+					-- show_settings = false,
+					icons = {
+						tool_success = "󰸞 ",
+					},
+					fold_context = true,
+				},
+			},
+			opts = {},
 		},
+		init = function()
+			vim.cmd([[cab cc CodeCompanion]])
+		end,
 	},
 	{
 		dir = IS_DEV and "~/Projects/research/CopilotChat.nvim" or nil,
