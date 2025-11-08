@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520159234,
+        "prev_ver": 536870913,
         "name": "Áudio do desktop",
         "uuid": "76e8b441-47d8-45b6-94aa-59ad000f067e",
         "id": "pulse_output_capture",
@@ -31,7 +31,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520159234,
+        "prev_ver": 536870913,
         "name": "Mic/Aux",
         "uuid": "257d2d8f-5863-4ea9-b981-3242dbbaabef",
         "id": "pulse_input_capture",
@@ -61,28 +61,28 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Cena",
-    "current_program_scene": "Cena",
+    "current_scene": "Janela-Webcam",
+    "current_program_scene": "Janela-Webcam",
     "scene_order": [
         {
-            "name": "Cena"
+            "name": "Janela-Webcam"
         }
     ],
     "name": "Sem nome",
     "sources": [
         {
-            "prev_ver": 520159234,
-            "name": "Cena",
+            "prev_ver": 536870913,
+            "name": "Janela-Webcam",
             "uuid": "2d091ecf-84b9-4815-bb09-995f8d0d96fc",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 12,
+                "id_counter": 18,
                 "custom_size": false,
                 "items": [
                     {
-                        "name": "Captura de tela (PipeWire)",
-                        "source_uuid": "cc40c5c0-9ce9-4b8b-9405-47747a79a95c",
+                        "name": "Captura de Entrada de Áudio (PipeWire)",
+                        "source_uuid": "ebb82cce-5a88-43dc-9e03-774aefeffccb",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -98,7 +98,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 4,
+                        "id": 17,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -136,8 +136,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Captura de entrada de áudio (PulseAudio)",
-                        "source_uuid": "1a8070ab-76c4-4a05-b1d0-58faa7850288",
+                        "name": "Captura de monitor (PipeWire)",
+                        "source_uuid": "e1e43ba9-f29d-4bfd-b310-ed80c903c805",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -153,7 +153,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 11,
+                        "id": 18,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -205,10 +205,10 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": [],
-                "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": []
+                "libobs.show_scene_item.17": [],
+                "libobs.hide_scene_item.17": [],
+                "libobs.show_scene_item.18": [],
+                "libobs.hide_scene_item.18": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -217,39 +217,14 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520159234,
-            "name": "Captura de tela (PipeWire)",
-            "uuid": "cc40c5c0-9ce9-4b8b-9405-47747a79a95c",
-            "id": "pipewire-screen-capture-source",
-            "versioned_id": "pipewire-screen-capture-source",
+            "prev_ver": 536870913,
+            "name": "Captura de Entrada de Áudio (PipeWire)",
+            "uuid": "ebb82cce-5a88-43dc-9e03-774aefeffccb",
+            "id": "pipewire_audio_input_capture",
+            "versioned_id": "pipewire_audio_input_capture",
             "settings": {
-                "RestoreToken": ""
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520159234,
-            "name": "Captura de entrada de áudio (PulseAudio)",
-            "uuid": "1a8070ab-76c4-4a05-b1d0-58faa7850288",
-            "id": "pulse_input_capture",
-            "versioned_id": "pulse_input_capture",
-            "settings": {
-                "device_id": "alsa_input.usb-3142_Fifine_Microphone-00.mono-fallback"
+                "TargetName": "alsa_input.usb-3142_Fifine_Microphone-00.mono-fallback",
+                "TargetId": 0
             },
             "mixers": 255,
             "sync": 0,
@@ -268,6 +243,32 @@
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": []
             },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Captura de monitor (PipeWire)",
+            "uuid": "e1e43ba9-f29d-4bfd-b310-ed80c903c805",
+            "id": "pipewire-screen-capture-source",
+            "versioned_id": "pipewire-screen-capture-source",
+            "settings": {
+                "RestoreToken": ""
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
@@ -309,7 +310,8 @@
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
-        "type2": 3
+        "type2": 1,
+        "scene": "Janela-Webcam"
     },
     "modules": {
         "scripts-tool": [],
