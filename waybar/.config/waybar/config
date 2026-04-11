@@ -174,7 +174,7 @@
     },
 
     "temperature": {
-      "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input",
+      "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
       "critical-threshold": 80,
       "interval": 5,
       "format": "{icon} {temperatureC}°C",

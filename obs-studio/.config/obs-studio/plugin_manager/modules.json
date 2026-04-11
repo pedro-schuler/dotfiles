@@ -13,5 +13,18 @@
             "pipewire_audio_application_capture"
         ],
         "version": ""
+    },
+    {
+        "display_name": "DroidCam",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "droidcam-obs",
+        "outputs": [],
+        "services": [],
+        "sources": [
+            "droidcam_obs"
+        ],
+        "version": ""
     }
 ]

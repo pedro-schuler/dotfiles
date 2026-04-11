@@ -1,7 +1,9 @@
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-export PATH="$HOME/.config/juliaup/bin:$HOME/.local/texlive/2025/bin/x86_64-linux:$HOME/.local/bin/:$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/.config/juliaup/bin:$HOME/.local/texlive/2026/bin/x86_64-linux:$HOME/.local/bin/:$HOME/.config/emacs/bin:$PATH"
+export MANPATH="$HOME/.local/texlive/2026/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="$HOME/.local/texlive/2026/texmf-dist/doc/info:$INFOPATH"
 export EDITOR="nvim"
 # Add Carapace bridges to provide completions
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional

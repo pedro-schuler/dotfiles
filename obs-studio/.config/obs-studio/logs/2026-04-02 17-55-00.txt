@@ -1,0 +1,305 @@
+17:55:00.037: Platform: Wayland
+17:55:00.037: CPU Name: Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz
+17:55:00.037: CPU Speed: 3001.689MHz
+17:55:00.038: Physical Cores: 2, Logical Cores: 4
+17:55:00.038: Physical Memory: 15878MB Total, 6877MB Free
+17:55:00.038: Kernel Version: Linux 6.19.10-arch1-1
+17:55:00.038: Distribution: "Arch Linux" Unknown
+17:55:00.038: Desktop Environment: Hyprland (Hyprland)
+17:55:00.038: Session Type: wayland
+17:55:00.039: Current Date/Time: 2026-04-02, 17:55:00
+17:55:00.039: Browser Hardware Acceleration: true
+17:55:00.039: Qt Version: 6.11.0 (runtime), 6.11.0 (compiled)
+17:55:00.039: Portable mode: false
+17:55:00.125: OBS 32.1.0 (linux)
+17:55:00.125: ---------------------------------
+17:55:00.126: ---------------------------------
+17:55:00.126: audio settings reset:
+17:55:00.126: 	samples per sec: 48000
+17:55:00.126: 	speakers:        2
+17:55:00.126: 	max buffering:   960 milliseconds
+17:55:00.126: 	buffering type:  dynamically increasing
+17:55:00.128: ---------------------------------
+17:55:00.128: Initializing OpenGL...
+17:55:00.128: Using EGL/Wayland
+17:55:00.195: Initialized EGL 1.5
+17:55:00.216: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 520 (SKL GT2)
+17:55:00.216: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 26.0.3-arch1.1, shading language 4.60
+17:55:00.255: ---------------------------------
+17:55:00.255: video settings reset:
+17:55:00.255: 	base resolution:   1920x1080
+17:55:00.255: 	output resolution: 1920x1080
+17:55:00.255: 	downscale filter:  Bicubic
+17:55:00.255: 	fps:               30/1
+17:55:00.255: 	format:            NV12
+17:55:00.255: 	YUV mode:          Rec. 709/Partial
+17:55:00.255: NV12 texture support enabled
+17:55:00.255: P010 texture support not available
+17:55:00.260: Audio monitoring device:
+17:55:00.260: 	name: Padrão
+17:55:00.260: 	id: default
+17:55:00.262: ---------------------------------
+17:55:00.263: Failed to load 'en-US' text for module: 'decklink-captions.so'
+17:55:00.265: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+17:55:00.266: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+17:55:00.266: Failed to initialize module 'decklink.so'
+17:55:00.270: [droidcam-obs] module loaded release 243 (arch)
+17:55:00.421: [pipewire] Available capture sources:
+17:55:00.421: [pipewire]     - Monitor source
+17:55:00.421: [pipewire]     - Window source
+17:55:00.444: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+17:55:00.545: VAAPI: API version 1.23
+17:55:00.644: FFmpeg VAAPI H264 encoding not supported
+17:55:00.812: FFmpeg VAAPI AV1 encoding not supported
+17:55:00.982: FFmpeg VAAPI HEVC encoding not supported
+17:55:01.311: [NVENC] Test process failed: no_supported_devices
+17:55:01.311: NVENC not supported
+17:55:01.311: Failed to initialize module 'obs-nvenc.so'
+17:55:01.677: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.2 | RPC Version: 1)
+17:55:01.677: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.11.0 | Qt version (run-time): 6.11.0
+17:55:01.677: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+17:55:01.683: [obs-websocket] [obs_module_load] Module loaded.
+17:55:01.689: ---------------------------------
+17:55:01.689:   Loaded Modules:
+17:55:01.689:     linux-pipewire-audio.so
+17:55:01.689:     text-freetype2.so
+17:55:01.689:     rtmp-services.so
+17:55:01.689:     obs-x264.so
+17:55:01.689:     obs-websocket.so
+17:55:01.689:     obs-webrtc.so
+17:55:01.689:     obs-vst.so
+17:55:01.689:     obs-transitions.so
+17:55:01.689:     obs-qsv11.so
+17:55:01.689:     obs-outputs.so
+17:55:01.689:     obs-libfdk.so
+17:55:01.689:     obs-filters.so
+17:55:01.689:     obs-ffmpeg.so
+17:55:01.689:     linux-v4l2.so
+17:55:01.689:     linux-pulseaudio.so
+17:55:01.689:     linux-pipewire.so
+17:55:01.689:     linux-jack.so
+17:55:01.689:     linux-capture.so
+17:55:01.689:     linux-alsa.so
+17:55:01.689:     image-source.so
+17:55:01.689:     frontend-tools.so
+17:55:01.689:     droidcam-obs.so
+17:55:01.689:     decklink-output-ui.so
+17:55:01.689:     decklink-captions.so
+17:55:01.689: ---------------------------------
+17:55:01.689: ---------------------------------
+17:55:01.689: Available Encoders:
+17:55:01.689:   Video Encoders:
+17:55:01.689: 	- ffmpeg_svt_av1 (SVT-AV1)
+17:55:01.689: 	- ffmpeg_aom_av1 (AOM AV1)
+17:55:01.689: 	- obs_x264 (x264)
+17:55:01.689:   Audio Encoders:
+17:55:01.690: 	- ffmpeg_aac (FFmpeg AAC)
+17:55:01.690: 	- ffmpeg_opus (FFmpeg Opus)
+17:55:01.690: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+17:55:01.690: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+17:55:01.690: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+17:55:01.690: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+17:55:01.690: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+17:55:01.690: 	- libfdk_aac (libfdk AAC)
+17:55:01.690: ==== Startup complete ===============================================
+17:55:01.728: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+17:55:01.729: All scene data cleared
+17:55:01.729: ------------------------------------------------
+17:55:01.735: Device for 'Audio Output Capture' source Áudio do desktop is also used for audio monitoring.
+17:55:01.735: Deduplication logic is being applied to all monitored sources.
+17:55:01.735: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.2) 15.0.0'
+17:55:01.736: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+17:55:01.736: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+17:55:01.736: [Loaded global audio device]: 'Áudio do desktop'
+17:55:01.737: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.2) 15.0.0'
+17:55:01.737: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+17:55:01.737: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+17:55:01.737: [Loaded global audio device]: 'Mic/Aux'
+17:55:01.743: [pipewire] Created stream 0x558e6f6df9d0
+17:55:01.743: PipeWire initialized
+17:55:01.743: [DroidCamOBS] Source: "DroidCam OBS" - 243
+17:55:01.743: [DroidCamOBS] trying 'adb'
+17:55:01.754: [DroidCamOBS] "adb version" exit value 2
+17:55:01.754: [DroidCamOBS] trying '/usr/local/bin/adb'
+17:55:01.754: [DroidCamOBS] trying '/usr/bin/adb'
+17:55:01.754: [DroidCamOBS] trying '/bin/adb'
+17:55:01.754: [DroidCamOBS] adb not found
+17:55:01.754: [DroidCamOBS] PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+17:55:01.755: [DroidCamOBS] Source: activated=1, deactivateWNS=0, is_showing=0, enable_audio=0
+17:55:01.755: [DroidCamOBS] Source: video_format=avc video_resolution=640x480
+17:55:01.755: [DroidCamOBS] activated: device_info.id=dev_id_wifi device_info.ip=10.0.0.96 device_info.port=4747 device_info.type=1
+17:55:01.755: [DroidCamOBS] video_thread start
+17:55:01.755: [DroidCamOBS] audio_thread start
+17:55:01.756: [DroidCamOBS] video_decode_thread start
+17:55:01.758: Switched to scene 'Janela-Webcam'
+17:55:01.759: ------------------------------------------------
+17:55:01.759: Loaded scenes:
+17:55:01.759: - scene 'Janela-Webcam':
+17:55:01.759:     - source: 'Captura de Entrada de Áudio (PipeWire)' (pipewire_audio_input_capture)
+17:55:01.759:     - source: 'Captura de monitor (PipeWire)' (pipewire-screen-capture-source)
+17:55:01.759:     - source: 'DroidCam OBS' (droidcam_obs)
+17:55:01.759: ------------------------------------------------
+17:55:01.794: Device for 'Audio Output Capture' source Áudio do desktop is also used for audio monitoring.
+17:55:01.794: Deduplication logic is being applied to all monitored sources.
+17:55:01.879: [pipewire] Screencast session created
+17:55:02.303: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Áudio do desktop)
+17:55:02.303: 
+17:55:02.565: [DroidCamOBS] read_frame: got config: 29
+17:55:02.606: [DroidCamOBS] use hw: 1
+17:55:03.447: [pipewire] Asking for monitor and window
+17:55:03.454: [pipewire] source selected, setting up screencast
+17:55:03.461: [pipewire] Server version: 1.6.2
+17:55:03.461: [pipewire] Library version: 1.6.2
+17:55:03.461: [pipewire] Header version: 1.6.2
+17:55:03.461: [pipewire] Created stream 0x558e7156d120
+17:55:03.461: [pipewire] Stream 0x558e7156d120 state: "connecting" (error: none)
+17:55:03.462: [pipewire] Playing stream 0x558e7156d120
+17:55:03.463: [pipewire] Stream 0x558e7156d120 state: "paused" (error: none)
+17:55:03.484: [pipewire] Negotiated format:
+17:55:03.484: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:55:03.484: [pipewire]     Modifier: 0x0
+17:55:03.484: [pipewire]     Size: 1920x1080
+17:55:03.484: [pipewire]     Framerate: 0/1
+17:55:03.488: [pipewire] Negotiated format:
+17:55:03.488: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:55:03.488: [pipewire]     Modifier: 0x100000000000004
+17:55:03.488: [pipewire]     Size: 1920x1080
+17:55:03.488: [pipewire]     Framerate: 0/1
+17:55:03.500: [pipewire] Stream 0x558e7156d120 state: "streaming" (error: none)
+17:55:03.514: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+17:55:03.514: [pipewire] Renegotiating stream
+17:55:03.515: [pipewire] Stream 0x558e7156d120 state: "paused" (error: none)
+17:55:03.515: [pipewire] Negotiated format:
+17:55:03.515: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:55:03.515: [pipewire]     Modifier: 0x100000000000004
+17:55:03.515: [pipewire]     Size: 1920x1080
+17:55:03.515: [pipewire]     Framerate: 0/1
+17:55:03.517: [pipewire] Negotiated format:
+17:55:03.517: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:55:03.517: [pipewire]     Modifier: 0x100000000000002
+17:55:03.517: [pipewire]     Size: 1920x1080
+17:55:03.517: [pipewire]     Framerate: 0/1
+17:55:03.523: [pipewire] Stream 0x558e7156d120 state: "streaming" (error: none)
+17:55:04.969: NV12 texture support enabled
+17:55:04.969: P010 texture support not available
+17:55:04.978: Attempting to reset output capability of '/dev/video0'
+17:55:04.978: Attempting to reset output capability of '/dev/video1'
+17:55:04.978: Attempting to reset output capability of '/dev/video2'
+17:55:04.978: Attempting to reset output capability of '/dev/video3'
+17:55:04.978: Attempting to reset output capability of '/dev/video4'
+17:55:04.979: Virtual camera started
+17:55:04.986: ==== Virtual Camera Start ==========================================
+17:55:04.986: Starting Virtual Camera output to Scene : Janela-Webcam
+17:55:35.302: [DroidCamOBS] read header recv returned 0
+17:55:37.450: [DroidCamOBS] send(/video) failed
+17:55:39.496: [DroidCamOBS] send(/video) failed
+17:55:41.647: [DroidCamOBS] send(/video) failed
+17:55:43.695: [DroidCamOBS] send(/video) failed
+17:55:46.453: [DroidCamOBS] read_frame: got config: 29
+17:55:46.506: [DroidCamOBS] use hw: 1
+17:55:54.097: [DroidCamOBS] source_properties: activated=1, uhd_unlock=0
+17:55:55.454: [DroidCamOBS] deactivate
+17:55:56.245: [DroidCamOBS] target IP is '10.0.0.96'
+17:55:56.245: [DroidCamOBS] activated: id=dev_id_wifi type=1 ip=10.0.0.96 port=4747
+17:55:56.245: [DroidCamOBS] video_format=avc video_resolution=640x480
+17:55:56.888: [DroidCamOBS] read_frame: got config: 29
+17:55:56.939: [DroidCamOBS] use hw: 1
+17:57:02.588: [DroidCamOBS] source_properties: activated=1, uhd_unlock=0
+17:58:08.937: [DroidCamOBS] source_properties: activated=1, uhd_unlock=0
+18:01:15.745: Output 'virtualcam_output': stopping
+18:01:15.745: Output 'virtualcam_output': Total frames output: 11122
+18:01:15.745: Output 'virtualcam_output': Total drawn frames: 11122 (11123 attempted)
+18:01:15.745: Output 'virtualcam_output': Number of lagged frames due to rendering lag/stalls: 1 (0.0%)
+18:01:15.745: ==== Virtual Camera Stop ===========================================
+18:01:15.746: Virtual camera stopped
+18:01:17.883: ==== Shutting down ==================================================
+18:01:17.888: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+18:01:17.888: pulse-input: Got 15043 packets with 18051600 frames
+18:01:17.888: Deduplication logic stopped.
+18:01:17.888: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+18:01:17.888: pulse-input: Got 15044 packets with 18052800 frames
+18:01:17.891: [pipewire] Stream 0x558e7156d120 state: "paused" (error: none)
+18:01:17.891: [pipewire] Stream 0x558e7156d120 state: "unconnected" (error: none)
+18:01:17.898: [DroidCamOBS] destroy: "DroidCam OBS"
+18:01:17.898: [DroidCamOBS] stopping
+18:01:17.901: [DroidCamOBS] video_decode_thread end
+18:01:17.908: [DroidCamOBS] audio_thread end
+18:01:17.911: [DroidCamOBS] video_thread end
+18:01:17.911: [DroidCamOBS] cleanup
+18:01:17.962: All scene data cleared
+18:01:17.962: ------------------------------------------------
+18:01:17.974: Tried to call obs_frontend_remove_event_callback with no callbacks!
+18:01:18.051: [obs-websocket] [obs_module_unload] Shutting down...
+18:01:18.051: Tried to call obs_frontend_remove_event_callback with no callbacks!
+18:01:18.051: [obs-websocket] [obs_module_unload] Finished shutting down.
+18:01:18.069: [Scripting] Total detached callbacks: 0
+18:01:18.069: Freeing OBS context data
+18:01:18.085: == Profiler Results =============================
+18:01:18.085: run_program_init: 1901.42 ms
+18:01:18.085:  ┣OBSApp::AppInit: 21.768 ms
+18:01:18.085:  ┃ ┗OBSApp::InitLocale: 1.59 ms
+18:01:18.085:  ┗OBSApp::OBSInit: 1825.34 ms
+18:01:18.085:    ┣obs_startup: 2.116 ms
+18:01:18.085:    ┗OBSBasic::OBSInit: 1736.98 ms
+18:01:18.085:      ┣OBSBasic::InitBasicConfig: 0.766 ms
+18:01:18.085:      ┣OBSBasic::ResetAudio: 0.363 ms
+18:01:18.085:      ┣OBSBasic::ResetVideo: 132.82 ms
+18:01:18.085:      ┃ ┗obs_init_graphics: 127.847 ms
+18:01:18.085:      ┃   ┗shader compilation: 38.303 ms
+18:01:18.085:      ┣OBSBasic::InitOBSCallbacks: 0.004 ms
+18:01:18.085:      ┣OBSBasic::InitHotkeys: 0.025 ms
+18:01:18.085:      ┣obs_load_all_modules2: 1427.13 ms
+18:01:18.085:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+18:01:18.085:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+18:01:18.085:      ┃ ┣obs_init_module(decklink.so): 0.101 ms
+18:01:18.085:      ┃ ┣obs_init_module(droidcam-obs.so): 0.039 ms
+18:01:18.085:      ┃ ┣obs_init_module(frontend-tools.so): 120.335 ms
+18:01:18.085:      ┃ ┣obs_init_module(image-source.so): 0.007 ms
+18:01:18.085:      ┃ ┣obs_init_module(linux-alsa.so): 0.002 ms
+18:01:18.085:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+18:01:18.085:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+18:01:18.085:      ┃ ┣obs_init_module(linux-pipewire.so): 18.114 ms
+18:01:18.085:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.003 ms
+18:01:18.085:      ┃ ┣obs_init_module(linux-v4l2.so): 0.061 ms
+18:01:18.085:      ┃ ┣obs_init_module(obs-ffmpeg.so): 538.271 ms
+18:01:18.085:      ┃ ┣obs_init_module(obs-filters.so): 0.022 ms
+18:01:18.085:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+18:01:18.085:      ┃ ┣obs_init_module(obs-nvenc.so): 324.335 ms
+18:01:18.085:      ┃ ┃ ┗nvenc_check: 324.308 ms
+18:01:18.085:      ┃ ┣obs_init_module(obs-outputs.so): 0.004 ms
+18:01:18.085:      ┃ ┣obs_init_module(obs-qsv11.so): 341.154 ms
+18:01:18.085:      ┃ ┣obs_init_module(obs-transitions.so): 0.011 ms
+18:01:18.086:      ┃ ┣obs_init_module(obs-vst.so): 0.002 ms
+18:01:18.086:      ┃ ┣obs_init_module(obs-webrtc.so): 0.003 ms
+18:01:18.086:      ┃ ┣obs_init_module(obs-websocket.so): 6.1 ms
+18:01:18.086:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+18:01:18.086:      ┃ ┣obs_init_module(rtmp-services.so): 0.357 ms
+18:01:18.086:      ┃ ┣obs_init_module(text-freetype2.so): 0.009 ms
+18:01:18.086:      ┃ ┗obs_init_module(linux-pipewire-audio.so): 0.003 ms
+18:01:18.086:      ┣OBSBasic::InitService: 2.183 ms
+18:01:18.086:      ┣OBSBasic::ResetOutputs: 0.151 ms
+18:01:18.086:      ┣OBSBasic::CreateHotkeys: 0.025 ms
+18:01:18.086:      ┣OBSBasic::InitPrimitives: 0.104 ms
+18:01:18.086:      ┗OBSBasic::Load: 76.241 ms
+18:01:18.086: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.168 ms, 99th percentile=0.002 ms, 100% below 25 ms
+18:01:18.086: audio_thread(Audio): min=0.009 ms, median=0.068 ms, max=18.997 ms, 99th percentile=2.031 ms
+18:01:18.086: obs_graphics_thread(33.3333 ms): min=0.123 ms, median=2.356 ms, max=331.716 ms, 99th percentile=9.577 ms, 99.9294% below 33.333 ms
+18:01:18.086:  ┣tick_sources: min=0 ms, median=0.011 ms, max=33.893 ms, 99th percentile=0.089 ms
+18:01:18.086:  ┣output_frame: min=0.081 ms, median=1.758 ms, max=23.117 ms, 99th percentile=6.394 ms
+18:01:18.086:  ┃ ┣gs_context(video->graphics): min=0.081 ms, median=0.364 ms, max=16.285 ms, 99th percentile=1.714 ms, 1.98216 calls per parent call
+18:01:18.086:  ┃ ┃ ┣render_video: min=0.006 ms, median=0.147 ms, max=15.559 ms, 99th percentile=1.008 ms
+18:01:18.086:  ┃ ┃ ┃ ┣render_main_texture: min=0.005 ms, median=0.089 ms, max=13.193 ms, 99th percentile=0.897 ms
+18:01:18.086:  ┃ ┃ ┃ ┣render_convert_texture: min=0.019 ms, median=0.03 ms, max=13.528 ms, 99th percentile=0.144 ms, 0.4955 calls per parent call
+18:01:18.086:  ┃ ┃ ┃ ┗stage_output_texture: min=0.009 ms, median=0.015 ms, max=6.929 ms, 99th percentile=0.074 ms, 0.4955 calls per parent call
+18:01:18.086:  ┃ ┃ ┣gs_flush: min=0.027 ms, median=0.111 ms, max=15.942 ms, 99th percentile=0.602 ms
+18:01:18.086:  ┃ ┃ ┗download_frame: min=0 ms, median=0.06 ms, max=5.589 ms, 99th percentile=0.438 ms, 0.4955 calls per parent call
+18:01:18.086:  ┃ ┗output_video_data: min=0.348 ms, median=1.049 ms, max=21.054 ms, 99th percentile=3.998 ms
+18:01:18.086:  ┗render_displays: min=0.006 ms, median=0.562 ms, max=53.352 ms, 99th percentile=4.504 ms
+18:01:18.086: video_thread(video): min=3.546 ms, median=6.083 ms, max=82.94 ms, 99th percentile=14.507 ms
+18:01:18.086: OBSBasicSettings::LoadThemeList: 0.04 ms
+18:01:18.086: =================================================
+18:01:18.086: == Profiler Time Between Calls ==================
+18:01:18.086: obs_hotkey_thread(25 ms): min=25.018 ms, median=25.094 ms, max=52.123 ms, 96.0793% within ±2% of 25 ms (0% lower, 3.92065% higher)
+18:01:18.086: obs_graphics_thread(33.3333 ms): min=1.541 ms, median=33.334 ms, max=331.723 ms, 97.536% within ±2% of 33.333 ms (1.21876% lower, 1.24525% higher)
+18:01:18.086: =================================================
+18:01:18.119: Number of memory leaks: 0
