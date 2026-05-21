@@ -1,257 +1,343 @@
-@define-color cc-bg #16161d;
-@define-color noti-border-color #dcd7ba;
-@define-color noti-bg #11111b;
-@define-color noti-bg-darker #2b2b39;
-@define-color noti-bg-hover #1b1b2b;
-@define-color noti-bg-focus #1b1b1b;
-@define-color noti-close-bg #dcd7ba;
-@define-color noti-close-bg-hover #dcd7ba;
-@define-color text-color #dcd7ba;
-@define-color text-color-disabled #828282;
-@define-color bg-selected #7e9cd8;
-@define-color border-blue #89b4fa;
-@define-color red-base #c34043;
-@define-color red-hover #e46876;
-@define-color green-base #98bb6c;
-@define-color blue-base #7e9cd8;
+@import "colors/colors.css";
 
 * {
-  font-family: "JetBrainsMono NFM SemiBold", monospace;
-  border-radius: 0;
-}
+  font-family: "CaskaydiaCove Nerd Font Propo";
+  font-weight: 700;
+  all: unset;
 
-.control-center .notification-row:focus,
-.control-center .notification-row:hover {
-  opacity: 1;
-  background: @noti-bg-darker;
-}
+  /* Global style variables */
+  --border-radius: 16px;
+  --border-radius-s: 8px;
+  --border-radius-xl: 18px;
 
-.notification-row {
-  outline: none;
-  margin: 0;
-  padding: 0;
-}
-
-.notification,
-.notification-content,
-.notification-action,
-.notification-default-action,
-.inline-reply-entry,
-.inline-reply-button,
-.widget-title,
-.widget-title > button,
-.widget-dnd,
-.widget-dnd > switch,
-.widget-dnd > switch slider,
-.widget-label > label,
-.widget-buttons-grid,
-.widget-buttons-grid > flowbox > flowboxchild > button,
-.widget-volume,
-.widget-backlight,
-.widget-mpris,
-.widget-mpris > box > button,
-.widget-mpris-player,
-.widget-mpris-album-art {
-  border-radius: 0;
+  /* Shadows: set to none to disable */
+  --shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .notification {
-  background: @cc-bg;
-  border: 2px solid @border-blue;
-  margin: 3px -2px 3px 0;
+  padding: 5px;
 }
 
-.close-button {
-  background: @red-base;
-  color: @cc-bg;
-  text-shadow: none;
+.notification-background {
+  background: @notification-bg;
+  border-radius: var(--border-radius);
+  margin: 8px;
   padding: 0;
-  margin-top: 5px;
-  margin-right: 5px;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  border-radius: 0;
-  border: none;
+  /* box-shadow: none; */
 }
 
-.notification:hover .close-button {
-  opacity: 1;
+.notification-background .close-button {
+  margin: 6px;
+  padding: 2px;
+  border-radius: 6px;
+  background: transparent;
+  color: @text;
 }
 
-.close-button:hover {
-  background: @red-hover;
-  box-shadow: none;
-  transition: all 0.15s ease-in-out;
+.notification-background .close-button:hover {
+  background: @hover;
+}
+
+.notification.critical {
+  border: 2px solid @urgent;
+  border-radius: var(--border-radius);
+}
+
+.notification-content {
+  color: @text;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.notification-content .text-box {
+  margin: 0 0 0 15px;
+}
+
+.notification-content .time {
+  padding: 2px;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.notification-content .summary {
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 2px 0;
+  margin-bottom: 2px;
+}
+
+.notification-content .body {
+  color: @text-alt;
+  font-size: 0.8rem;
+}
+
+.notification-row .inline-reply-entry,
+.notification-row .inline-reply-button {
+  margin: 5px -5px -5px -5px;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  background: @background-alt;
+}
+
+.notification-row .inline-reply-entry {
+  margin-right: 10px;
+}
+
+.notification-row .inline-reply-button:hover {
+  background: @selected;
+}
+
+.notification-alt-actions {
+  padding: 5px 0;
 }
 
 .notification-action {
-  border: 2px solid @border-blue;
-}
-
-.notification-default-action:hover,
-.notification-action:hover {
-  color: @blue-base;
-  background: @cc-bg;
-}
-
-.inline-reply-entry {
-  background: @noti-bg-darker;
-  color: @text-color;
-  caret-color: @text-color;
-  border: 1px solid @noti-border-color;
-}
-
-.inline-reply-button {
-  margin-top: 4px;
-  margin-left: 4px;
-  background: @noti-bg;
-  border: 1px solid @noti-border-color;
-  color: @text-color;
-}
-
-.inline-reply-button:disabled {
-  background: transparent;
-  color: @text-color-disabled;
-  border: 1px solid transparent;
-}
-
-.inline-reply-button:hover {
-  background: @noti-bg-hover;
-}
-
-.summary {
-  font-size: 16px;
   font-weight: 700;
-  background: transparent;
-  color: @green-base;
-  text-shadow: none;
+  border-radius: var(--border-radius);
+  background: @hover;
+  color: @text;
+  margin: 0 5px;
+  padding: 10px 0;
 }
 
-.time {
-  font-size: 16px;
-  font-weight: 700;
-  background: transparent;
-  color: @text-color;
-  text-shadow: none;
-  margin-right: 18px;
-}
-
-.body {
-  font-size: 15px;
-  font-weight: 400;
-  background: transparent;
-  color: @text-color;
-  text-shadow: none;
+.notification-action:hover,
+.notification-action:active {
+  background: @selected;
 }
 
 .control-center {
-  background: @cc-bg;
+  background: @center-bg;
   border: 2px solid @border-blue;
+  border-radius: var(--border-radius);
+  margin: 5px;
+  padding: 5px 5px 0 5px;
 }
 
-.widget-title {
-  color: @blue-base;
-  background: @noti-bg-darker;
-  padding: 5px 10px;
-  margin: 10px;
-  font-size: 1.5rem;
+.control-center .notification-background {
+  background: @center-notification-bg;
+  box-shadow: var(--shadow);
 }
 
-.widget-title > button {
+/* Remove close buttons in notification center */
+.control-center .notification-background .close-button,
+.notification-group-close-button {
+  opacity: 0;
+}
+
+.notification-group {
+  transition: 200ms;
+}
+
+/* Notifications expanded-group extra margin */
+.notification-group:not(.collapsed) {
+  margin: 8px;
+}
+
+.notification-group-headers,
+.notification-group-buttons {
+  color: @text;
+  font-weight: bold;
+  background: @background;
+  border-radius: var(--border-radius);
+  padding: 4px 8px;
+}
+
+.notification-group-headers > label {
+  margin: 0 3px;
   font-size: 1rem;
-  color: @text-color;
-  background: @noti-bg;
-  box-shadow: none;
 }
 
-.widget-title > button:hover {
-  background: @red-base;
-  color: @cc-bg;
+.notification-group-icon {
+  color: @text;
 }
 
+.notification-group-buttons .image-button {
+  background: transparent;
+  color: @text;
+  padding: 4px;
+  border-radius: var(--border-radius);
+}
+
+.notification-group-buttons .image-button:hover {
+  background: @hover;
+}
+
+/* Widgets */
+.widget {
+  margin: 5px;
+  color: @text;
+}
+
+.widget-mpris-album-art {
+  border-radius: var(--border-radius);
+  margin: 6px 4px;
+}
+
+.widget-mpris-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 3px;
+}
+
+.widget-mpris-subtitle {
+  color: @text-alt;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0 3px;
+}
+
+.mpris-background {
+  border-radius: 14px;
+  margin: 3px;
+}
+
+.widget-mpris {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.mpris-overlay {
+  border-radius: var(--border-radius);
+  padding: 10px;
+  background: @background;
+}
+
+/* Control buttons container  */
+.mpris-overlay > box:last-child {
+  border-radius: var(--border-radius-xl);
+  padding: 0 5px;
+  background: alpha(@hover, 0.6);
+}
+
+/* Control buttons */
+.widget-mpris-player button {
+  padding: 5px;
+  margin: 0 2.5px;
+}
+
+/* Hover for control buttons */
+.widget-mpris-player button:hover {
+  border-radius: var(--border-radius-s);
+  background: @hover;
+}
+
+/* Do not disturb */
 .widget-dnd {
-  background: @noti-bg-darker;
-  padding: 5px 10px;
-  margin: 5px 10px;
-  font-size: large;
-  color: @blue-base;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  background: @background-alt;
+  box-shadow: var(--shadow);
+  color: @text;
 }
 
-.widget-dnd > switch {
-  background: @blue-base;
-  border-radius: 0;
-}
-
-.widget-dnd > switch:checked {
-  background: @red-base;
-  border: 1px solid @red-base;
-}
-
-.widget-label > label {
+.widget-dnd > label {
   font-size: 1rem;
-  color: @text-color;
-  margin: 10px;
+  font-weight: 700;
+}
+
+.widget-dnd switch {
+  background: @hover;
+  border-radius: var(--border-radius-s);
+  box-shadow: none;
+  padding: 2px;
+  transition: 200ms;
+}
+
+.widget-dnd switch slider {
+  background: @text;
+  border-radius: var(--border-radius-s);
+}
+
+.widget-dnd switch:hover,
+.widget-dnd switch:checked {
+  background-color: @selected;
+}
+
+.widget-notifications {
+  margin: 0;
 }
 
 .widget-buttons-grid {
-  font-size: x-large;
-  padding: 5px;
-  margin: 0px 10px 10px 10px;
-  background: @noti-bg-darker;
+  border-radius: var(--border-radius);
+  padding: 5px 15px;
+  margin-bottom: 25px;
+  background: @background-alt;
+  box-shadow: var(--shadow);
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button {
+.widget-buttons-grid button {
+  padding: 10px;
   margin: 3px;
-  padding: 4px 30px;
-  background: @cc-bg;
-  color: @text-color;
-  transition: background-color 0.15s ease-in-out;
+  min-width: 2rem;
+  background: @hover;
+  border-radius: var(--border-radius);
+  transition: 200ms;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button:hover {
-  background: @blue-base;
-  color: @cc-bg;
+.widget-buttons-grid button > label {
+  font-family: "CaskaydiaCove Nerd Font Propo";
+  font-size: 16px;
+  color: @text;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button:checked {
-  background: @green-base;
-  color: @cc-bg;
+.widget-buttons-grid button:hover {
+  background: @selected;
+}
+
+.widget-buttons-grid button:checked {
+  background-color: @text;
+}
+
+.widget-buttons-grid button:checked > label {
+  color: @background;
 }
 
 .widget-volume,
 .widget-backlight {
-  background: @noti-bg-darker;
-  padding: 5px;
-  margin: 5px 10px;
-  font-size: 2rem;
-  color: @blue-base;
+  padding: 8px 14px;
+  margin: 5px 0;
+  border-radius: 12px;
+  color: @text;
+  font-weight: 800;
+  background: @background-alt;
 }
 
-.widget-mpris {
-  color: @text-color;
-  background: @noti-bg-darker;
-  margin: 0px 10px 10px 10px;
-  box-shadow: none;
+.widget-volume label,
+.widget-backlight label {
+  font-size: 1.1rem;
 }
 
-.widget-mpris > box > button,
-.widget-mpris-player,
-.widget-mpris-album-art {
-  border-radius: 0;
-  box-shadow: none;
-  margin: 10px;
+.widget-volume slider,
+.widget-backlight slider {
+  border-radius: 24px;
+  margin: -8px;
+  background: @text;
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }
 
-picture.mpris-background {
-  opacity: 0;
+.widget-volume trough,
+.widget-backlight trough {
+  background: @hover;
+  margin-left: 8px;
+  border-radius: 12px;
 }
 
-.notification-action > button {
-  color: @text-color;
-  border-radius: 0px;
+.widget-volume highlight,
+.widget-backlight highlight {
+  padding: 3.5px;
+  border-radius: 12px;
+  background: @text;
 }
 
-.notification-action > button:hover {
-  background-color: @border-green;
-  color: @cc-bg;
+/* Change color for placeholder when no notifications */
+.control-center-list-placeholder {
+  color: @text;
+}
+
+/* Avoid 'annoying' backgroud */
+.blank-window {
+  background: transparent;
 }

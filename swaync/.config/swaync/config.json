@@ -1,71 +1,87 @@
 {
-  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "$schema": "/etc/xdg/swaync/configschema.json",
   "positionX": "right",
   "positionY": "top",
-  "control-center-margin-top": 10,
-  "control-center-margin-bottom": 10,
-  "control-center-margin-right": 10,
-  "notification-icon-size": 64,
-  "notification-body-image-height": 100,
-  "notification-body-image-width": 200,
-  "timeout": 10,
-  "timeout-low": 5,
-  "timeout-critical": 0,
-  "fit-to-screen": false,
-  "control-center-width": 300,
+  "cssPriority": "user",
+  "control-center-width": 450,
   "control-center-height": 1033,
-  "notification-window-width": 500,
+  "fit-to-screen": false,
+
+  "notification-window-width": 400,
+  "notification-icon-size": 40,
+  "notification-body-image-height": 500,
+  "notification-body-image-width": 500,
+  "notification-inline-replies": true,
+  "notification-2fa-action": false,
+
+  "timeout": 7,
+  "timeout-low": 4,
+  "timeout-critical": 6,
+
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
   "transition-time": 200,
   "hide-on-clear": false,
   "hide-on-action": true,
   "script-fail-notify": true,
-  "widgets": ["buttons-grid", "volume", "backlight", "notifications", "mpris"],
+
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 10,
+
+  "widgets": [
+    "backlight",
+    "volume",
+    "mpris",
+    "dnd",
+    "notifications",
+    "buttons-grid"
+  ],
+
   "widget-config": {
     "title": {
       "text": "Notificações",
       "clear-all-button": true,
       "button-text": "󰆴 Limpar tudo"
     },
-    "dnd": {
-      "text": "Não perturbe"
-    },
-    "label": {
-      "max-lines": 1,
-      "text": "Notificação"
-    },
-    "mpris": {
-      "image-size": 50,
-      "image-radius": 5
+    "backlight": {
+      "label": "󰃠",
+      "slider": true,
+      "min": 10
     },
     "volume": {
-      "label": "󰕾"
+      "device": "default",
+      "label": "",
+      "slider": true
     },
-    "backlight": {
-      "label": "󰃟"
+
+    "dnd": {
+      "text": "Não Perturbe"
     },
+
+    "mpris": {
+      "image-size": 100,
+      "image-radius": 10,
+      "autohide": false
+    },
+
     "buttons-grid": {
       "actions": [
         {
           "label": "󰐥",
-          "command": "systemctl poweroff"
+          "command": "/home/schuler/.config/nwg-bar/exitmenu.sh --shutdown"
         },
         {
           "label": "󰜉",
-          "command": "systemctl reboot"
+          "command": "/home/schuler/.config/nwg-bar/exitmenu.sh --reboot"
         },
         {
           "label": "󰌾",
-          "command": "/home/schuler/.config/nwg-bar/lock.sh"
+          "command": "/home/schuler/.config/nwg-bar/exitmenu.sh --lock"
         },
         {
           "label": "󰍃",
-          "command": "hyprctl dispatch exit"
-        },
-        {
-          "label": "󰆴",
-          "command": "swaync-client -C"
+          "command": "/home/schuler/.config/nwg-bar/exitmenu.sh --logout"
         },
         {
           "label": "󰕾",
