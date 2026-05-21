@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+selection=$(
+    find ~/.password-store -type f -name '*.gpg' |
+    sed 's|.*/.password-store/||' |
+    sed 's|\.gpg$||' |
+    sort |
+    fuzzel --dmenu --prompt "󰟵 Pass: "
+)
+
+[ -n "$selection" ] && pass show -c "$selection"
