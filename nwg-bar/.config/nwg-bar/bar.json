@@ -1,22 +1,22 @@
 [
   {
     "label": "Lock",
-    "exec": "/home/schuler/.config/nwg-bar/lock.sh",
+    "exec": "/home/schuler/.config/nwg-bar/exitmenu.sh --lock",
     "icon": "/usr/share/nwg-bar/images/system-lock-screen.svg"
   },
   {
-    "label": "Logout",
-    "exec": "hyprctl dispatch exit",
+    "label": "_Logout",
+    "exec": "/home/schuler/.config/nwg-bar/exitmenu.sh --logout",
     "icon": "/usr/share/nwg-bar/images/system-log-out.svg"
   },
   {
-    "label": "Reboot",
-    "exec": "systemctl reboot",
+    "label": "_Reboot",
+    "exec": "/home/schuler/.config/nwg-bar/exitmenu.sh --reboot",
     "icon": "/usr/share/nwg-bar/images/system-reboot.svg"
   },
   {
-    "label": "Shutdown",
-    "exec": "systemctl -i poweroff",
+    "label": "_Shutdown",
+    "exec": "/home/schuler/.config/nwg-bar/exitmenu.sh --shutdown",
     "icon": "/usr/share/nwg-bar/images/system-shutdown.svg"
   }
 ]
