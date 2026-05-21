@@ -1,0 +1,39 @@
+-------------------------------
+---- ENVIRONMENT VARIABLES ----
+-------------------------------
+
+-- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
+-- Set Themes env variables
+hl.env("HYPRCURSOR_THEME", "Catppuccin-Mocha-Dark")
+hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("XCURSOR_THEME", "Catppuccin-Mocha-Dark")
+hl.env("XCURSOR_SIZE", "24")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+
+-- Set toolkit backends to use wayland
+hl.env("GDK_BACKEND", "wayland,x11,*")
+hl.env("QT_QPA_PLATFORM", "wayland;xcb")
+hl.env("SDL_VIDEODRIVER", "wayland")
+hl.env("CLUTTER_BACKEND", "wayland")
+
+-- Set XDG specifications
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+
+-- Force QT appplications to use auto Scaling
+hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
+
+-- Disable window decorations on QT applications
+hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
+
+-- Set NVIDIA specific env variables
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+hl.env("NVD_BACKEND", "direct")
+
+-- Set ssh env variables
+hl.env("SSH_AUTH_SOCK", "$XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh")
+-- Set Electron specific env variables
+-- hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
+
