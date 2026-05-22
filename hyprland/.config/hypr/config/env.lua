@@ -37,3 +37,5 @@ hl.env("SSH_AUTH_SOCK", "$XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh")
 -- Set Electron specific env variables
 -- hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 
+-- Set zk notebook directory
+hl.env("ZK_NOTEBOOK_DIR", "$HOME/Documentos/zettelkasten")
