@@ -15,6 +15,7 @@ return {
 			"rafamadriz/friendly-snippets",
 			"hrsh7th/cmp-nvim-lsp-signature-help",
 			"micangl/cmp-vimtex",
+			"krissen/blink-cmp-bibtex",
 		},
 		opts = {
 			-- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
@@ -94,6 +95,7 @@ return {
 					"path",
 					"snippets",
 					"buffer",
+					"bibtex",
 					"vimtex",
 					"nvim_lsp_signature_help",
 				},
@@ -102,6 +104,25 @@ return {
 					codecompanion = { "codecompanion" },
 				},
 				providers = {
+					bibtex = {
+						name = "Bibtex",
+						module = "blink-cmp-bibtex",
+						score_offset = 100, -- Mantém as citações com alta prioridade no menu
+
+						-- Passamos as opções de caminhos e busca estruturadas para o plugin nativo
+						opts = {
+							-- Aponta diretamente para o arquivo sincronizado pelo Zotero
+							--bib_files = { vim.fn.expand("~/Documentos/zettelkasten/references.bib") },
+							global_files = { vim.fn.expand("~/Documentos/zettelkasten/references.bib") },
+							filetypes = { "markdown" },
+
+							-- Campos do BibLaTeX que o motor vai indexar para busca em tempo real
+							-- search_keys = { "author", "year", "title", "subtitle", "journaltitle", "booktitle" },
+
+							-- O formato gerado ao aceitar a sugestão (Padrão Pandoc/Markdown)
+							-- citation_format = "[@{{label}}]",
+						},
+					},
 					vimtex = {
 						name = "vimtex",
 						module = "blink.compat.source",
