@@ -20,7 +20,8 @@
 
     "modules-left": [
         "custom/power",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "mpris"
     ],
     "modules-center": [
         "hyprland/window"
@@ -62,6 +63,16 @@
             ""  // Icon: battery-empty
         ],
         "tooltip": true
+    },
+
+    "mpris": {
+        "format": "{artist} - {title}",
+        "tooltip-format" : "{album}",
+        "format-paused": " {artist} - {title}",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl previous",
+        "on-scroll-down": "playerctl next",
+        "max-length": 45
     },
     
     "power-profiles-daemon": {

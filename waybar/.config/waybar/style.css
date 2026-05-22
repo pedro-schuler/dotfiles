@@ -36,7 +36,6 @@
 @define-color flamingo #f2cdcd;
 @define-color rosewater #f5e0dc;
 
-
 /* =============================================================================
  *
  * Waybar configuration
@@ -50,27 +49,26 @@
  * -------------------------------------------------------------------------- */
 
 @keyframes blink-warning {
-    70% {
-        color: @text;
-    }
+  70% {
+    color: @text;
+  }
 
-    to {
-        color: @text;
-        background-color: @peach;
-    }
+  to {
+    color: @text;
+    background-color: @peach;
+  }
 }
 
 @keyframes blink-critical {
-    70% {
-        color: @text;
-    }
+  70% {
+    color: @text;
+  }
 
-    to {
-        color: @text;
-        background-color: @red;
-    }
+  to {
+    color: @text;
+    background-color: @red;
+  }
 }
-
 
 /* -----------------------------------------------------------------------------
  * Base styles
@@ -78,19 +76,19 @@
 
 /* Reset all styles */
 * {
-    border: none;
-    border-radius: 0;
-    min-height: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 13px;
-    font-family: "JetBrainsMono Nerd Font, JetBrainsMono NF, Cantarell, Noto Sans, sans-serif";
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "JetBrainsMono Nerd Font, JetBrainsMono NF, Cantarell, Noto Sans, sans-serif";
 }
 
 /* The whole bar */
 #waybar {
-    background: @surface1;
-    color: @text;
+  background: @surface1;
+  color: @text;
 }
 
 /* Each module */
@@ -105,14 +103,18 @@
 #battery,
 #tray,
 #clock {
-    padding-left: 5px;
-    padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mpris {
+  color: @green;
 }
 
 #power-profiles-daemon {
-    padding-left: 5px;
-    padding-right: 10px;
-    color: @green;
+  padding-left: 5px;
+  padding-right: 10px;
+  color: @green;
 }
 
 /* -----------------------------------------------------------------------------
@@ -120,147 +122,147 @@
  * -------------------------------------------------------------------------- */
 
 .modules-right {
-    padding-left: 5px;
-    border-radius: 15px 0 0 15px;
-    margin-top: 2px;
-    margin-bottom: 3px;
-    background: @base;
-    padding-left: 15px
+  padding-left: 5px;
+  border-radius: 15px 0 0 15px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  background: @base;
+  padding-left: 15px;
 }
 
 .modules-center {
-    padding: 0 15px;
-    margin-top: 2px;
-    margin-bottom: 3px;
-    border-radius: 15px 15px 15px 15px;
-    background: @base;
+  padding: 0 15px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  border-radius: 15px 15px 15px 15px;
+  background: @base;
 }
 
 .modules-left {
-    border-radius: 0 15px 15px 0;
-    margin-top: 2px;
-    margin-bottom: 3px;
-    background: @base;
-    padding-right: 15px
+  border-radius: 0 15px 15px 0;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  background: @base;
+  padding-right: 15px;
 }
 
 #battery {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: @peach;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: @peach;
 }
 
 #battery.warning {
-    background: @overlay1;
+  background: @overlay1;
 }
 
 #battery.critical {
-    background: @overlay1;
-    color: @red;
+  background: @overlay1;
+  color: @red;
 }
 
 #battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
+  animation-name: blink-warning;
+  animation-duration: 3s;
 }
 
 #battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
+  animation-name: blink-critical;
+  animation-duration: 2s;
 }
 
 #clock {
-    color: @lavender;
+  color: @lavender;
 }
 
 #cpu {
-    color: @sapphire;
+  color: @sapphire;
 }
 
 #cpu.warning {
-    background: @overlay1;
+  background: @overlay1;
 }
 
 #cpu.critical {
-    background: @overlay1;
-    color: @red;
+  background: @overlay1;
+  color: @red;
 }
 
 #memory {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: @maroon;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: @maroon;
 }
 
 #memory.warning {
-    background: @overlay1;
+  background: @overlay1;
 }
 
 #memory.critical {
-    color: @red;
-    background: @overlay1;
-    animation-name: blink-critical;
-    animation-duration: 2s;
+  color: @red;
+  background: @overlay1;
+  animation-name: blink-critical;
+  animation-duration: 2s;
 }
 
 #network {
-    color: @mauve;
+  color: @mauve;
 }
 
 #network.disconnected {
-    background: @overlay1;
+  background: @overlay1;
 }
 
 #pulseaudio {
-    color: @pink;
+  color: @pink;
 }
 
 #pulseaudio.muted {
-    background: @overlay1;
+  background: @overlay1;
 }
 
 #temperature {
-    color: @teal;
+  color: @teal;
 }
 
 #temperature.critical {
-    background: @overlay1;
-    color: @red;
+  background: @overlay1;
+  color: @red;
 }
 
 #tray {
-    /* No styles */
+  /* No styles */
 }
 
 #window {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 window#waybar.empty .modules-center {
-    padding: 0;
-    margin-top: 2px;
-    border-radius: 0;
-    background: transparent;
+  padding: 0;
+  margin-top: 2px;
+  border-radius: 0;
+  background: transparent;
 }
 
 #custom-power {
-    padding-left: 15px;
-    padding-right: 15px;
-    color: @red;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: @red;
 }
 
 #workspaces button {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: @text;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: @text;
 }
 
 #workspaces button.active {
-    background-color: @surface0;
+  background-color: @surface0;
 }
 
 #workspaces button.urgent {
-    color: @red;
+  color: @red;
 }
