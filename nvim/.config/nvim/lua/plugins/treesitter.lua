@@ -1,25 +1,19 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+		branch = "main",
 		dependencies = {
 			"windwp/nvim-ts-autotag",
 		},
 		build = ":TSUpdate",
+		lazy = false,
 		config = function()
-			local configs = require("nvim-treesitter.configs")
+			local treesitter = require("nvim-treesitter")
 
-			require("nvim-ts-autotag").setup({
-				opts = {
-					-- Defaults
-					enable_close = true, -- Auto close tags
-					enable_rename = true, -- Auto rename pairs of tags
-					enable_close_on_slash = false, -- Auto close on trailing </
-				},
-			})
+			treesitter.setup()
 
-			configs.setup({
-				auto_install = true,
-				ensure_installed = {
+			treesitter
+				.install({
 					"bash",
 					"csv",
 					"css",
@@ -38,17 +32,14 @@ return {
 					"regex",
 					"toml",
 					"yaml",
-				},
-				-- sync_install = false,
-				-- autotag = {
-				-- 	enable = true,
-				-- },
-				highlight = {
-					enable = true,
-					disable = { "latex", "org" },
-				},
-				indent = {
-					enable = true,
+				})
+				:wait(60000) -- Aguarda a compilação no primeiro boot (nos seguintes vira no-op)
+
+			require("nvim-ts-autotag").setup({
+				opts = {
+					enable_close = true,
+					enable_rename = true,
+					enable_close_on_slash = false,
 				},
 			})
 		end,
