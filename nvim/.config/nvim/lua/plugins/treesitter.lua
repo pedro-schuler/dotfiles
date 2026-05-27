@@ -17,6 +17,7 @@ return {
 					"bash",
 					"csv",
 					"css",
+					"scss",
 					"html",
 					"javascript",
 					"typescript",

@@ -30,9 +30,9 @@ return {
 			end
 
 			-- Keybindings
-			vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
-			vim.keymap.set("n", "<Leader>db", dap.set_breakpoint, {})
-			vim.keymap.set("n", "<Leader>dc", dap.continue, {})
+			vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, { desc = "[D]ebugger [T]oggle Breakpoint" })
+			vim.keymap.set("n", "<Leader>db", dap.set_breakpoint, { desc = "[D]ebugger Set [B]reakpoint" })
+			vim.keymap.set("n", "<Leader>dc", dap.continue, { desc = "[D]ebugger [C]ontinue" })
 		end,
 	},
 }
