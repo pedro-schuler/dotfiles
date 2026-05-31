@@ -149,12 +149,12 @@
 
 #media {
   color: @green;
-  padding-left: 80px;
   /*margin: 0px 0px 0px 40px;*/
 }
 
 #custom-media-animation {
   font-size: 11px;
+  padding-left: 80px;
   padding-right: 10px;
 }
 

@@ -77,6 +77,7 @@
       "exec": "~/.dotfiles/waybar/.config/waybar/custom_modules/media/now-playing.sh",
       "escape": true,
       "tooltip": false,
+      "hide-empty-text": true,
       "on-click": "playerctl play-pause",
       "on-click-middle": "playerctl previous",
       "on-click-right": "playerctl next"
@@ -84,11 +85,13 @@
 
     "custom/media-animation": {
       "exec": "~/.dotfiles/waybar/.config/waybar/custom_modules/media/animation.sh",
+      "hide-empty-text": true,
       "tooltip": false
     },
 
     "custom/media-time": {
       "exec": "~/.dotfiles/waybar/.config/waybar/custom_modules/media/media-time.sh",
+      "hide-empty-text": true,
       "escape": true,
       "interval": 1,
       "tooltip": false
