@@ -21,7 +21,24 @@ vim.opt.wrap = true
 
 -- Set spell correction
 vim.opt.spell = true
-vim.opt.spelllang = "pt,en"
+vim.opt.spelllang = { "pt", "en" }
+
+-- Configura o comportamento de busca de dicionários do Neovim:
+-- 'spellfile' indica onde o Neovim vai salvar as palavras que VOCÊ adicionar ao dicionário customizado
+vim.opt.spellfile = vim.fn.stdpath("config") .. "/spell/pt_en.utf-8.add"
+
+-- Navegação rápida entre erros ortográficos
+vim.keymap.set("n", "]s", "]s", { desc = "Spell: Próximo Erro" })
+vim.keymap.set("n", "[s", "[s", { desc = "Spell: Erro Anterior" })
+
+-- Sugestões de correção ortográfica (Abre o menu flutuante sob a palavra)
+vim.keymap.set("n", "<leader>sc", "z=", { desc = "Spell: [S]pell [C]orrection" })
+
+-- Adicionar palavra errada ao dicionário pessoal (Marca como correta)
+vim.keymap.set("n", "<leader>sa", "zg", { desc = "Spell: [S]pell [A]dd Word" })
+
+-- Remover palavra do dicionário pessoal (Volta a marcar como errada)
+vim.keymap.set("n", "<leader>sr", "zw", { desc = "Spell: [S]pell [R]emove Word" })
 
 -- Enable break indent
 vim.opt.breakindent = true
