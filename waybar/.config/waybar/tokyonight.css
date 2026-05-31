@@ -1,0 +1,23 @@
+  /* Background Variants */
+ @define-color bg-night: #1a1b26;        /* Deep, dark main background */
+ @define-color bg-storm: #24283b;        /* Slightly lighter background variant */
+ @define-color bg-dark: #1f2335;         /* Used for sidebars or panels */
+  
+  /* Foreground & Text */
+ @define-color fg-main: #c0caf5;         /* Primary text, variables, class names */
+ @define-color fg-dark: #a9b1d6;         /* Secondary text, editor foreground */
+ @define-color fg-muted: #9aa5ce;        /* Muted elements, Markdown/HTML text */
+ @define-color comment: #565f89;         /* Comments, subtle text */
+
+  /* Terminal & Accent Colors */
+ @define-color black: #414868;           /* Terminal black / subtle borders */
+ @define-color red: #f7768e;             /* Keywords, HTML tags, CSS units */
+ @define-color orange: #ff9e64;          /* Numbers, Boolean constants */
+ @define-color yellow: #e0af68;          /* Functions parameters, Terminal yellow */
+ @define-color green: #9ece6a;           /* Strings, CSS class names */
+ @define-color teal: #73daca;            /* Object literal keys, Markdown links */
+ @define-color aqua: #b4f9f8;            /* Extra bright cyan/aqua accent */
+ @define-color cyan: #7dcfff;            /* Object properties, Markdown headings */
+ @define-color blue: #7aa2f7;            /* Function names, CSS properties */
+ @define-color purple: #bb9af7;          /* Control keywords, HTML attributes */
+ @define-color magenta: #bb9af7;

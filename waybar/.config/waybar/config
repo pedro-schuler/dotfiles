@@ -21,23 +21,21 @@
     "modules-left": [
         "custom/power",
         "hyprland/workspaces",
-        "mpris"
+        "group/media"
     ],
     "modules-center": [
-        "hyprland/window"
+        "group/date"
     ],
+
     "modules-right": [
         "pulseaudio",
         "network",
         "memory",
         "cpu",
         "temperature",
-        "custom/keyboard-layout",
         "battery",
         "power-profiles-daemon",
-        "tray",
-        "clock#date",
-        "clock#time"
+        "tray"
     ],
 
 
@@ -45,111 +43,10 @@
     // Modules
     // -------------------------------------------------------------------------
 
-    "battery": {
-        "interval": 10,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        // Connected to AC
-        "format": " {icon}  {capacity}%", // Icon: bolt
-        // Not connected to AC
-        "format-discharging": "{icon}  {capacity}%",
-        "format-icons": [
-            "", // Icon: battery-full
-            "", // Icon: battery-three-quarters
-            "", // Icon: battery-half
-            "", // Icon: battery-quarter
-            ""  // Icon: battery-empty
-        ],
-        "tooltip": true
-    },
-
-    "mpris": {
-        "format": "{artist} - {title}",
-        "tooltip-format" : "{album}",
-        "format-paused": " {artist} - {title}",
-        "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl previous",
-        "on-scroll-down": "playerctl next",
-        "max-length": 45
-    },
-    
-    "power-profiles-daemon": {
-        "format": "{icon}",
-        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-        "tooltip": true,
-        "format-icons": {
-            "default": "",
-            "performance": "",
-            "balanced": "",
-            "power-saver": ""
-        }
-    },
-
-    "clock#time": {
-        "interval": 1,
-        "format": "{:%H:%M}",
-        "tooltip": false
-    },
-
-    "clock#date": {
-      "interval": 10,
-      "timezone": "America/Recife",
-      "locale": "pt_BR.utf8",
-      "format": " {:L%e %b %Y}", // Icon: calendar-alt
-      "tooltip-format": "{:L%e %B %Y}",
-      "on-click": "kitty -e calcurse"
-    },
-
-    "cpu": {
-        "interval": 5,
-        "format": " {usage}% ({load})", // Icon: microchip
-        "states": {
-          "warning": 70,
-          "critical": 90
-        }
-    },
-
     "custom/power": {
         "on-click": "nwg-bar",
         "format": "⏻",
         "tootip": false
-    },
-
-//    "custom/keyboard-layout": {
-//      "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-//      // Interval set only as a fallback, as the value is updated by signal
-//      "interval": 30,
-//      "format": "  {}", // Icon: keyboard
-//      // Signal sent by Sway key binding (~/.config/sway/key-bindings)
-//      "signal": 1, // SIGHUP
-//      "tooltip": false
-//    },
-
-    "memory": {
-        "interval": 5,
-        "format": "  {}%", // Icon: memory
-        "states": {
-            "warning": 70,
-            "critical": 90
-        }
-    },
-
-    "network": {
-        "interval": 5,
-        "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": " {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-        "format-disconnected": "⚠ Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "nm-connection-editor",
-        "on-click-right": "kitty -e nmtui"
-    },
-
-    "hyprland/window": {
-        "format": "<span style=\"italic\">{}</span>",
-        "tooltip": false,
-        "max-length": 60
     },
 
     "hyprland/workspaces": {
@@ -165,6 +62,59 @@
             "urgent": "",
             "default": ""
         }
+    },
+
+    "group/media": {
+      "orientation": "horizontal",
+      "modules": [
+        "custom/media-animation",
+        "custom/media-now-playing",
+        "custom/media-time"
+      ]
+    },
+
+    "custom/media-now-playing": {
+      "exec": "~/.dotfiles/waybar/.config/waybar/custom_modules/media/now-playing.sh",
+      "escape": true,
+      "tooltip": false,
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl previous",
+      "on-click-right": "playerctl next"
+    },
+
+    "custom/media-animation": {
+      "exec": "~/.dotfiles/waybar/.config/waybar/custom_modules/media/animation.sh",
+      "tooltip": false
+    },
+
+    "custom/media-time": {
+      "exec": "~/.dotfiles/waybar/.config/waybar/custom_modules/media/media-time.sh",
+      "escape": true,
+      "interval": 1,
+      "tooltip": false
+    },
+ 
+    "clock#time": {
+        "interval": 1,
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+
+    "clock#date": {
+      "interval": 10,
+      "timezone": "America/Recife",
+      "locale": "pt_BR.utf8",
+      "format": " {:L%e %b %Y}", // Icon: calendar-alt
+      "tooltip-format": "{:L%e %B %Y}",
+      "on-click": "kitty -e calcurse"
+    },
+
+    "group/date": {
+        "orientation": "horizontal",
+        "modules": [
+            "clock#date",
+            "clock#time"
+        ]
     },
 
     "pulseaudio": {
@@ -184,6 +134,34 @@
         "on-click": "kitty -e wiremix"
     },
 
+    "network": {
+        "interval": 5,
+        "format-wifi": "  {essid}", // Icon: wifi
+        "format-ethernet": " {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+        "format-disconnected": "⚠ Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}",
+        "on-click": "nm-connection-editor",
+        "on-click-right": "kitty -e nmtui"
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": " {}%", // Icon: memory
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%", // Icon: microchip
+        "states": {
+          "warning": 70,
+          "critical": 90
+        }
+    },
+
     "temperature": {
       "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
       "critical-threshold": 80,
@@ -199,9 +177,85 @@
       "tooltip": true
     },
 
+   "battery": {
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        // Connected to AC
+        "format": "{icon} {capacity}%", // Icon: bolt
+        "format-icons": {
+          "default": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+          ],
+          "charging": [
+            "󰢟",
+            "󰢜",
+            "󰂆",
+            "󰂇",
+            "󰂈",
+            "󰢝",
+            "󰂉",
+            "󰢞",
+            "󰂊",
+            "󰂋",
+            "󰂅"
+          ]
+        },
+        "tooltip": true
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+
     "tray": {
         "icon-size": 21,
         "spacing": 10
     }
+ }
 
-}
+    /*"custom/keyboard-layout": {
+      "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+      // Interval set only as a fallback, as the value is updated by signal
+      "interval": 30,
+      "format": "  {}", // Icon: keyboard
+      // Signal sent by Sway key binding (~/.config/sway/key-bindings)
+      "signal": 1, // SIGHUP
+      "tooltip": false
+    },
+
+     "hyprland/window": {
+        "format": "<span style=\"italic\">{}</span>",
+        "tooltip": false,
+        "max-length": 60
+    },
+
+    "mpris": {
+        "format": "{artist} - {title}",
+        "tooltip-format" : "{album}",
+        "format-paused": " {artist} - {title}",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl previous",
+        "on-scroll-down": "playerctl next",
+        "max-length": 45
+    },*/
