@@ -14,6 +14,7 @@ local programs = {
 	printAndAnnotate = 'grim -g "$(slurp)" - | satty -f - --copy-command wl-copy -o "~/Imagens/%Y%m%d_%Hh%Mm%Ss_satty.png"',
 	notifications = "swaync-client -t -sw",
 	secrets = "$HOME/.local/bin/user-passmenu",
+	browser = "flatpak run app.zen_browser.zen --ozone-platform=wayland --enable-features=UseOzonePlatform",
 }
 
 return programs

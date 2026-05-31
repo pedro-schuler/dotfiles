@@ -17,6 +17,7 @@ hl.bind(
 )
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(programs.fileManager))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(programs.secrets))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(programs.browser))
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd(programs.notifications))
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd(programs.exitMenu))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd(programs.printScreen))
