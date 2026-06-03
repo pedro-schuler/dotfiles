@@ -21,6 +21,7 @@
 .notification-background {
   background: @notification-bg;
   border-radius: var(--border-radius);
+  border: 2px solid @border-blue;
   margin: 8px;
   padding: 0;
   /* box-shadow: none; */
@@ -115,6 +116,7 @@
 
 .control-center .notification-background {
   background: @center-notification-bg;
+  border: none;
   box-shadow: var(--shadow);
 }
 

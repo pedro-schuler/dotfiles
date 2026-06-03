@@ -1,11 +1,11 @@
-@define-color center-bg                 #1a1b26;
-@define-color notification-bg           #16161d;
-@define-color center-notification-bg    #16161d;
-@define-color background                #16161d;
-@define-color background-alt            #16161d;
-@define-color text                      #c0caf5;
-@define-color text-alt                  #828282;
+@define-color center-bg                 #24283b; /* Background do centro de notificações */
+@define-color notification-bg           #24283b; /* Background da notificação flutuante */
+@define-color center-notification-bg    #16161d; /* Background da notificação que aparece no centro de notificações */
+@define-color background                #16161d; /* Background do MPRIS no centro de notificações */
+@define-color background-alt            #16161d; /* Background dos sliders, não perturbe, etc */
+@define-color text                      #c0caf5; /* Cor dos textos principais */
+@define-color text-alt                  #565f89; /* Cor dos textos menores */
 @define-color selected                  alpha(@text-alt, .4);
 @define-color hover                     alpha(@selected, .4);
 @define-color urgent                    @text-alt;
-@define-color border-blue               #89b4fa;
+@define-color border-blue               #89b4fa; /* Cor da borda do centro de notificações */
