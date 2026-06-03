@@ -8,7 +8,6 @@ hl.env("HYPRCURSOR_THEME", "Catppuccin-Mocha-Dark")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("XCURSOR_THEME", "Catppuccin-Mocha-Dark")
 hl.env("XCURSOR_SIZE", "24")
-hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
 -- Set toolkit backends to use wayland
 hl.env("GDK_BACKEND", "wayland,x11,*")
@@ -21,9 +20,10 @@ hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 
--- Force QT appplications to use auto Scaling
+-- QT specific settings
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+-- Force QT applications to use auto Scaling
 hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
-
 -- Disable window decorations on QT applications
 hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 
